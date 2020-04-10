@@ -1,0 +1,47 @@
+// start style header
+header {
+    .navbar {
+        padding: 1rem;
+        background-color: $mainColor !important;
+        .container {
+            position: relative;
+            a {
+                color: #fff !important;
+                text-transform: $text-upper;
+            }
+            .cont-img {
+                bottom: -60px;
+                left: 0;
+                margin: 0;
+                width: 100px;
+                position: absolute;
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    @include browsers(border-radius, 0px 0px 35% 35%, o ms moz webkit)
+                }
+            }
+            ul li.dropdown {
+                a::after {
+                    margin-right: 0.255em;
+                    margin-left: 0 !important;
+                }
+                div.dropdown-menu {
+                    left: auto;
+                    right: 0;
+                    padding: 0;
+                    background-color: $mainColor;
+                    border: 1px solid #ffffff40;
+                    @include browsers(box-shadow, 0px 0px 4px -2px #191b48, o ms moz webkit);
+                    a {
+                        padding: 0.40rem 1.5rem;
+                        &:hover {
+                            color: #000 !important;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+// end style header
