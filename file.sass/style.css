@@ -4,6 +4,11 @@
 /*End Variables Float Diraction*/
 /*Start Variables Helprs*/
 /*Start Variables Helprs*/
+body {
+  height: 100000px;
+  background-color: #ccc;
+}
+
 header .cile-header {
   padding: 10px 0;
   background-color: #2f2f75;
@@ -44,6 +49,7 @@ header .cile-header .search form div {
   position: relative;
 }
 header .cile-header .search form div input {
+  border: none;
   font-size: small;
   color: #908f8f;
   -o-border-radius: 0;
@@ -97,6 +103,108 @@ header .navbar .container ul li.dropdown div.dropdown-menu a {
 }
 header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   color: #000 !important;
+}
+
+.content {
+  padding: 50px 0;
+  cursor: pointer;
+}
+.content .container {
+  background-color: #eee;
+  -o-box-shadow: 0px 2px 8px -5px #000;
+  -ms-box-shadow: 0px 2px 8px -5px #000;
+  -moz-box-shadow: 0px 2px 8px -5px #000;
+  -webkit-box-shadow: 0px 2px 8px -5px #000;
+  box-shadow: 0px 2px 8px -5px #000;
+}
+.content .container .box_top_player {
+  background-color: #fff;
+  -o-box-shadow: 0px 2px 8px -5px #000;
+  -ms-box-shadow: 0px 2px 8px -5px #000;
+  -moz-box-shadow: 0px 2px 8px -5px #000;
+  -webkit-box-shadow: 0px 2px 8px -5px #000;
+  box-shadow: 0px 2px 8px -5px #000;
+}
+.content .container .box_top_player .title h5 {
+  font-size: 17px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 1.5rem !important;
+}
+.content .container .box_top_player .title h5 span {
+  z-index: 1;
+  padding: 7px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  background-color: #c1198a;
+  border-bottom: 4px solid #c1198a;
+}
+.content .container .box_top_player .title h5::after {
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  position: absolute;
+  background-color: #191b48;
+}
+.content .container .box_top_player .title h5::before {
+  top: 53.5px;
+  content: '';
+  left: -2px;
+  z-index: 2;
+  border: 6px solid;
+  border-radius: 50%;
+  position: absolute;
+  color: #2f2f75;
+}
+.content .container .box_top_player .top-plyer {
+  border: 1px solid #000;
+  transition: all 0.2s linear;
+}
+.content .container .box_top_player .top-plyer:hover {
+  -o-transform: translate(0px, -3px);
+  -ms-transform: translate(0px, -3px);
+  -moz-transform: translate(0px, -3px);
+  -webkit-transform: translate(0px, -3px);
+  transform: translate(0px, -3px);
+  -o-box-shadow: 0px 2px 7px -1px #404040;
+  -ms-box-shadow: 0px 2px 7px -1px #404040;
+  -moz-box-shadow: 0px 2px 7px -1px #404040;
+  -webkit-box-shadow: 0px 2px 7px -1px #404040;
+  box-shadow: 0px 2px 7px -1px #404040;
+}
+.content .container .box_top_player .top-plyer:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+.content .container .box_top_player .top-plyer h6 {
+  color: #fff;
+  padding: 8px 0;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #191b48;
+}
+.content .container .box_top_player .top-plyer img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.content .container .box_top_player .top-plyer ul {
+  color: #fff;
+  list-style: none;
+  padding: 10px 15px !important;
+  background-color: #191b48;
+}
+.content .container .box_top_player .top-plyer ul li {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.content .container .box_top_player .top-plyer ul li span {
+  font-size: 12px;
+  color: #cccccc;
+  margin-right: 7px;
 }
 
 @media (max-width: 767px) {

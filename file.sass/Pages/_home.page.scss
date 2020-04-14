@@ -1,1 +1,88 @@
-
+// start style content
+// start style class .box_top_plyer
+.content {
+    padding: 50px 0;
+    cursor: pointer;
+    .container {
+        background-color: #eee;
+        @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);
+        .box_top_player {
+            background-color: #fff;
+            @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);
+            .title h5 {
+                font-size: 17px;
+                position: relative;
+                margin-bottom: 20px;
+                padding-top: 1.5rem !important;
+                span {
+                    z-index: 1;
+                    padding: 7px;
+                    color: #fff;
+                    position: relative;
+                    display: inline-block;
+                    background-color: $mainColor_3;
+                    border-bottom: 4px solid $mainColor_3;
+                }
+                &::after {
+                    left: 0;
+                    bottom: 0;
+                    z-index: 0;
+                    width: 100%;
+                    height: 4px;
+                    content: '';
+                    position: absolute;
+                    background-color: $mainColor_1;
+                }
+                &::before {
+                    top: 53.5px;;
+                    content: '';
+                    left: -2px;
+                    z-index: 2;
+                    border: 6px solid;
+                    border-radius: 50%;
+                    position: absolute;
+                    color: $mainColor_2;
+                }
+            }      
+            .top-plyer {
+                border: 1px solid #000;
+                @include browsers(transition, all .2s linear);
+                &:hover {
+                    @include browsers(transform, translate(0px, -3px), o ms moz webkit);
+                    @include browsers(box-shadow, 0px 2px 7px -1px #404040, o ms moz webkit);
+                }
+                &:not(:last-of-type) {
+                    margin-bottom: 25px;
+                }
+                h6 {
+                    color: #fff;
+                    padding: 8px 0;
+                    margin-bottom: 0;
+                    text-align: center;
+                    background-color: $mainColor_1;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 100%;            
+                }
+                ul {
+                    color: #fff;
+                    list-style: none;
+                    padding: 10px 15px !important;
+                    background-color: $mainColor_1;
+                    li {
+                        font-size: 14px;
+                        padding-bottom: 5px;
+                        span {
+                            font-size: 12px;
+                            color: #cccccc;                  
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// end style content

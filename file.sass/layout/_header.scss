@@ -42,12 +42,10 @@ header {
             overflow: hidden;
             position: relative;
             input {
+                border: none;
                 font-size: small;
-                color: #908f8f;                
+                color: #908f8f;
                 @include browsers(border-radius, 0, o ms moz webkit);
-                &::placeholder {
-
-                }
             }
             span {
                 top: 0;
