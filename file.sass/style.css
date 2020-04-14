@@ -15,22 +15,6 @@ header .navbar .container a {
   color: #fff !important;
   text-transform: uppercase;
 }
-header .navbar .container .cont-img {
-  bottom: -60px;
-  left: 0;
-  margin: 0;
-  width: 100px;
-  position: absolute;
-}
-header .navbar .container .cont-img img {
-  height: auto;
-  max-width: 100%;
-  -o-border-radius: 0px 0px 35% 35%;
-  -ms-border-radius: 0px 0px 35% 35%;
-  -moz-border-radius: 0px 0px 35% 35%;
-  -webkit-border-radius: 0px 0px 35% 35%;
-  border-radius: 0px 0px 35% 35%;
-}
 header .navbar .container ul li.dropdown a::after {
   margin-right: 0.255em;
   margin-left: 0 !important;
