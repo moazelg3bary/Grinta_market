@@ -1,0 +1,22 @@
+// start @media 767px
+@media (max-width: 767px) {
+    // edit media class cile-header
+    .cile-header .row div {
+        text-align: center !important;
+        &:nth-of-type(2) ul {
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-around;
+            li {
+                margin-left: 0;
+            }
+        }
+        &:last-of-type {
+            padding-bottom: 20px;
+            form div  span {
+                height: 65%
+            }
+        }
+    }
+}
+// end @media 767px

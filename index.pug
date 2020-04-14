@@ -1,5 +1,5 @@
 doctype html
-html(lang = 'en')
+html(lang = 'ar')
   head
     meta(charset = 'utf-8')
     meta(http-equiv = "X-UA-Compatible", content = "iE=edge")
@@ -14,48 +14,65 @@ html(lang = 'en')
     link(rel = 'stylesheet', href = 'file.sass/style.css')
     link(rel="stylesheet", href="file.css/style.ar.css")
   body(style="font-family: 'Cairo', sans-serif;")
+    // start header
     header
+      .cile-header
+        .container
+          .row.align-items-center.txt-right.dir-right
+            //- use grid system Bootstrap 4
+            .col-sm-12.col-md-4.logo
+              img(src="image/logo-2.jpeg", alt="logo")
+              a(href="#") جرينتا ماركيت
+            .col-sm-12.col-md-4.media_link
+              ul
+                //- use FontAwesome 5
+                li: a(href=""): i.fab.fa-facebook-square
+                li: a(href=""): i.fab.fa-twitter
+                li: a(href=""): i.fab.fa-instagram
+                li: a(href=""): i.fab.fa-youtube
+            .col-sm-12.col-md-4.search
+              form(action="")
+                .form-group
+                  span: i.fas.fa-search
+                  input(type="search" class="form-control" id="exampleInputSearch" placeholder="ابحث هنا !")
       // navbar Bootstrap 4
       nav.navbar.navbar-expand-md.navbar-light.bg-light.txt-right.dir-right
-        .container|
-          |
-          a.navbar-brand.cont-img(href="#")|
-            |
-            img(src="image/logo-1.jpeg" alt="")
-            |
-            |
-          |
+        .container
           |
           button.navbar-toggler.w-100.text-right(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
             a: i.fal.fa-bars
           .collapse.navbar-collapse#navbarSupportedContent
             ul.navbar-nav.ml-auto.p-0
               li.nav-item.active
-                a.nav-link(href="#") Home 
+                a.nav-link(href="#") الرئيسية 
                   span.sr-only (current)
               li.nav-item
-                a.nav-link(href="#") News Action
-              li.nav-item
-                a.nav-link(href="#") Videos
+                a.nav-link(href="#") الاخبار
               li.nav-item.dropdown|
                 |
-                a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown
+                a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") قائمة الدوري
                 .dropdown-menu.txt-right.dir-right(aria-labelledby="navbarDropdown")|
                   |
-                  a.dropdown-item(href="#") Action
+                  a.dropdown-item(href="#") الدوري الممتاز (ا)
                   |
                   |
-                  a.dropdown-item(href="#") Another action
+                  a.dropdown-item(href="#") الدوري الممتاز (ب)
                   .dropdown-divider
                   |
                   |
-                  a.dropdown-item(href="#") Something else here
+                  a.dropdown-item(href="#") الدوري الممتاز (ج)
               li.nav-item
-                a.nav-link(href="#") serves
+                a.nav-link(href="#") مباريات اليوم
               li.nav-item
-                a.nav-link(href="#") about us
+                a.nav-link(href="#") فيديوهات
               li.nav-item
-                a.nav-link(href="#") contact
+                a.nav-link(href="#") من نحن
+              li.nav-item
+                a.nav-link(href="#") اتصل بنا
+    // end header
+    |
+    |
+    // all script page
     script(src = 'file.js/popper.js')
     script(src = 'file.js/jquery-3.3.1.min.js')
     script(src = 'file.js/bootstrap.min.js')
