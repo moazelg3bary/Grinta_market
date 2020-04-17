@@ -9,6 +9,46 @@ body {
   background-color: #ccc;
 }
 
+.title h5 {
+  font-size: 17px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 1.5rem !important;
+}
+.title h5 span {
+  z-index: 1;
+  padding: 7px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  background-color: #c1198a;
+  border-bottom: 4px solid #c1198a;
+}
+.title h5::after {
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  position: absolute;
+  background-color: #191b48;
+}
+.title h5::before {
+  top: 53.5px;
+  content: '';
+  left: -2px;
+  z-index: 2;
+  border: 6px solid;
+  position: absolute;
+  color: #2f2f75;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
 header .cile-header {
   padding: 10px 0;
   background-color: #2f2f75;
@@ -125,41 +165,6 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   -webkit-box-shadow: 0px 2px 8px -5px #000;
   box-shadow: 0px 2px 8px -5px #000;
 }
-.content .container .box_top_player .title h5 {
-  font-size: 17px;
-  position: relative;
-  margin-bottom: 20px;
-  padding-top: 1.5rem !important;
-}
-.content .container .box_top_player .title h5 span {
-  z-index: 1;
-  padding: 7px;
-  color: #fff;
-  position: relative;
-  display: inline-block;
-  background-color: #c1198a;
-  border-bottom: 4px solid #c1198a;
-}
-.content .container .box_top_player .title h5::after {
-  left: 0;
-  bottom: 0;
-  z-index: 0;
-  width: 100%;
-  height: 4px;
-  content: '';
-  position: absolute;
-  background-color: #191b48;
-}
-.content .container .box_top_player .title h5::before {
-  top: 53.5px;
-  content: '';
-  left: -2px;
-  z-index: 2;
-  border: 6px solid;
-  border-radius: 50%;
-  position: absolute;
-  color: #2f2f75;
-}
 .content .container .box_top_player .top-plyer {
   border: 1px solid #000;
   transition: all 0.2s linear;
@@ -205,6 +210,73 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   font-size: 12px;
   color: #cccccc;
   margin-right: 7px;
+}
+.content .container .news_value {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  background-color: #fff;
+  -o-box-shadow: 0px 2px 8px -5px #000;
+  -ms-box-shadow: 0px 2px 8px -5px #000;
+  -moz-box-shadow: 0px 2px 8px -5px #000;
+  -webkit-box-shadow: 0px 2px 8px -5px #000;
+  box-shadow: 0px 2px 8px -5px #000;
+}
+.content .container .news_value .news .ditlist {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  padding: 10px 20px;
+  background-color: transparent;
+  -o-box-shadow: 0px -119px 35px -45px #191b47d9 inset;
+  -ms-box-shadow: 0px -119px 35px -45px #191b47d9 inset;
+  -moz-box-shadow: 0px -119px 35px -45px #191b47d9 inset;
+  -webkit-box-shadow: 0px -119px 35px -45px #191b47d9 inset;
+  box-shadow: 0px -119px 35px -45px #191b47d9 inset;
+}
+.content .container .news_value .news .ditlist h6 {
+  padding: 5px;
+  color: #fff;
+  display: inline-block;
+  background-color: #c1198a;
+}
+.content .container .news_value .news .ditlist p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.content .container .news_value .news .carousel-control-prev, .content .container .news_value .news .carousel-control-next i {
+  font-size: 100px;
+}
+.content .container .top_value {
+  border: 1px solid;
+}
+.content .container .top_value table caption {
+  color: #fff;
+  padding: 0;
+  font-size: 21px;
+  padding: 5px 6px;
+  text-align: right;
+  caption-side: top;
+  background-color: #191b48;
+}
+.content .container .top_value table thead {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.content .container .top_value table tbody tr th:first-of-type span {
+  display: block;
+}
+.content .container .top_value table tbody tr th:first-of-type span:first-of-type {
+  color: #1d75a3;
+}
+.content .container .top_value table tbody tr th:first-of-type span:last-of-type {
+  font-size: small;
+}
+.content .container .top_value table tbody tr td:last-of-type {
+  font-weight: 100;
+  font-family: fantasy;
+  text-transform: uppercase;
+}
+.content .container .top_value table tbody tr td:last-of-type span {
+  margin-right: 2px;
 }
 
 @media (max-width: 767px) {

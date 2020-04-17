@@ -5,49 +5,18 @@
     cursor: pointer;
     .container {
         background-color: #eee;
+        // use mixin sass
         @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);
         .box_top_player {
             background-color: #fff;
-            @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);
-            .title h5 {
-                font-size: 17px;
-                position: relative;
-                margin-bottom: 20px;
-                padding-top: 1.5rem !important;
-                span {
-                    z-index: 1;
-                    padding: 7px;
-                    color: #fff;
-                    position: relative;
-                    display: inline-block;
-                    background-color: $mainColor_3;
-                    border-bottom: 4px solid $mainColor_3;
-                }
-                &::after {
-                    left: 0;
-                    bottom: 0;
-                    z-index: 0;
-                    width: 100%;
-                    height: 4px;
-                    content: '';
-                    position: absolute;
-                    background-color: $mainColor_1;
-                }
-                &::before {
-                    top: 53.5px;;
-                    content: '';
-                    left: -2px;
-                    z-index: 2;
-                    border: 6px solid;
-                    border-radius: 50%;
-                    position: absolute;
-                    color: $mainColor_2;
-                }
-            }      
+            // use mixin sass
+            @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);   
             .top-plyer {
                 border: 1px solid #000;
+                // use mixin sass
                 @include browsers(transition, all .2s linear);
                 &:hover {
+                    // use mixin sass
                     @include browsers(transform, translate(0px, -3px), o ms moz webkit);
                     @include browsers(box-shadow, 0px 2px 7px -1px #404040, o ms moz webkit);
                 }
@@ -59,6 +28,7 @@
                     padding: 8px 0;
                     margin-bottom: 0;
                     text-align: center;
+                    // use var sass
                     background-color: $mainColor_1;
                 }
                 img {
@@ -70,6 +40,7 @@
                     color: #fff;
                     list-style: none;
                     padding: 10px 15px !important;
+                    // use var sass
                     background-color: $mainColor_1;
                     li {
                         font-size: 14px;
@@ -80,6 +51,72 @@
                             margin-right: 7px;
                         }
                     }
+                }
+            }
+        }
+        .news_value {
+            margin-top: 45px;
+            margin-bottom: 45px;        
+            background-color: #fff;
+            // use mixin sass
+            @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);    
+            .news {
+                .ditlist {
+                    left: 0;
+                    bottom: 0;
+                    position: absolute;
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    @include browsers(box-shadow, 0px -119px 35px -45px #191b47d9 inset, o ms moz webkit);
+                    h6 {
+                        padding: 5px;
+                        color: #fff;
+                        display: inline-block;
+                        background-color: $mainColor_3;
+                    }
+                    p {
+                        color: #fff;
+                        margin-bottom: 0;
+                    }
+                }
+                .carousel-control-prev, .carousel-control-next i{
+                    font-size: 100px;
+                }
+            }        
+        }
+        .top_value {
+            border: 1px solid;
+            table {
+                caption {
+                    color: #fff;
+                    padding: 0;
+                    font-size: 21px;
+                    padding: 5px 6px;                    
+                    text-align: right;
+                    caption-side: top;
+                    background-color: $mainColor_1;
+                }
+                thead {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+                tbody tr {
+                    th:first-of-type span {
+                        display: block;
+                        &:first-of-type {
+                            color: $mainColor_name;
+                        }
+                        &:last-of-type {
+                            font-size: small;
+                        }
+                    }
+                    td:last-of-type {
+                        font-weight: 100;
+                        font-family: fantasy;
+                        text-transform: uppercase;
+                        span {
+                            margin-right: 2px
+                        }
+                    }                  
                 }
             }
         }
