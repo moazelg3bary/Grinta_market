@@ -1,0 +1,67 @@
+// start style footer
+footer {
+    background-color: $mainColor_2;
+    .developer, .links, .media {
+      padding: 10px 0;
+      ul {
+        list-style: none;
+         li a {
+           color: #fff;
+           text-decoration: none;
+         }
+      }      
+    }
+    .developer ul li {
+      display: inline-block;
+      &:first-of-type {
+          width: 70px;
+          height: 70px;
+          margin-left: 6px;
+          display: inline-block;
+          img {
+              width: 100%;
+              height: auto;
+              max-width: 100%;
+          }               
+      }
+      &:last-of-type {
+          display: inline-block;
+          vertical-align: middle;
+          span {
+              color: #fff;
+              &:first-of-type {
+                display: block;
+                text-transform: capitalize;
+              }
+              &:last-of-type {
+                color: #c1c1c1;
+                font-size: small;
+                text-transform: capitalize;
+              }
+          }
+      }
+  }
+  .links ul li {
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+  }
+  .media ul li {
+    display: inline-block;
+    margin-left: 5px;
+    a {
+      font-size: x-large;
+    }
+  }
+  .pre-footer {
+    border-top: 2px solid #fff;
+    .copy_right {
+      margin: 5px 0;
+      a {
+        color: #fff;
+        text-decoration: none;        
+      }
+    }
+  }
+}
+// end style footer

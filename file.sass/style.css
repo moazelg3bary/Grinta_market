@@ -5,7 +5,6 @@
 /*Start Variables Helprs*/
 /*Start Variables Helprs*/
 body {
-  height: 100000px;
   background-color: #ccc;
 }
 
@@ -333,6 +332,79 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   display: inline-block;
   text-transform: uppercase;
   background-color: #2f2f75;
+}
+.content .container .top_video {
+  margin-top: 45px;
+  background-color: #fff;
+  -o-box-shadow: 0px 2px 8px -5px #000;
+  -ms-box-shadow: 0px 2px 8px -5px #000;
+  -moz-box-shadow: 0px 2px 8px -5px #000;
+  -webkit-box-shadow: 0px 2px 8px -5px #000;
+  box-shadow: 0px 2px 8px -5px #000;
+}
+
+footer {
+  background-color: #2f2f75;
+}
+footer .developer, footer .links, footer .media {
+  padding: 10px 0;
+}
+footer .developer ul, footer .links ul, footer .media ul {
+  list-style: none;
+}
+footer .developer ul li a, footer .links ul li a, footer .media ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .developer ul li {
+  display: inline-block;
+}
+footer .developer ul li:first-of-type {
+  width: 70px;
+  height: 70px;
+  margin-left: 6px;
+  display: inline-block;
+}
+footer .developer ul li:first-of-type img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+footer .developer ul li:last-of-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .developer ul li:last-of-type span {
+  color: #fff;
+}
+footer .developer ul li:last-of-type span:first-of-type {
+  display: block;
+  text-transform: capitalize;
+}
+footer .developer ul li:last-of-type span:last-of-type {
+  color: #c1c1c1;
+  font-size: small;
+  text-transform: capitalize;
+}
+footer .links ul li:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+footer .media ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+footer .media ul li a {
+  font-size: x-large;
+}
+footer .pre-footer {
+  border-top: 2px solid #fff;
+}
+footer .pre-footer .copy_right {
+  margin: 5px 0;
+}
+footer .pre-footer .copy_right a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
