@@ -5,7 +5,8 @@ html(lang = 'ar')
     meta(http-equiv = "X-UA-Compatible", content = "iE=edge")
     meta(name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-    title Grinta | Homepag
+    block Title_pages
+      title Grinta | Homepage
     // all fils css
     link(rel = 'stylesheet', href = 'file.css/bootstrap.css')
     link(rel = 'stylesheet', href = 'file.css/bootstrap-editor.css')
@@ -22,7 +23,7 @@ html(lang = 'ar')
             //- use grid system Bootstrap 4
             .col-sm-12.col-md-4.logo
               img(src="image/logo-2.jpeg", alt="logo")
-              a(href="#") جرينتا ماركيت
+              a(href="index.html") جرينتا ماركيت
             .col-sm-12.col-md-4.media_link
               ul
                 //- use FontAwesome 5
@@ -42,243 +43,245 @@ html(lang = 'ar')
           button.navbar-toggler.w-100.text-right(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
             a: i.fal.fa-bars
           .collapse.navbar-collapse#navbarSupportedContent
-            ul.navbar-nav.ml-auto.p-0
-              li.nav-item.active
-                a.nav-link(href="#") الرئيسية 
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href="#") الاخبار
-              li.nav-item.dropdown|
-                |
-                a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") قائمة الدوري
-                .dropdown-menu.txt-right.dir-right(aria-labelledby="navbarDropdown")|
+            block Link_pages
+              ul.navbar-nav.ml-auto.p-0
+                li.nav-item.active
+                  a.nav-link(href="index.html") الرئيسية 
+                    span.sr-only (current)
+                li.nav-item
+                  a.nav-link(href="news.html") الاخبار
+                li.nav-item.dropdown|
                   |
-                  a.dropdown-item(href="#") الدوري الممتاز (ا)
-                  |
-                  |
-                  a.dropdown-item(href="#") الدوري الممتاز (ب)
-                  .dropdown-divider
-                  |
-                  |
-                  a.dropdown-item(href="#") الدوري الممتاز (ج)
-              li.nav-item
-                a.nav-link(href="#") مباريات اليوم
-              li.nav-item
-                a.nav-link(href="#") فيديوهات
-              li.nav-item
-                a.nav-link(href="#") من نحن
-              li.nav-item
-                a.nav-link(href="#") اتصل بنا
+                  a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") قائمة الدوري
+                  .dropdown-menu.txt-right.dir-right(aria-labelledby="navbarDropdown")|
+                    |
+                    a.dropdown-item(href="#") الدوري الممتاز (ا)
+                    |
+                    |
+                    a.dropdown-item(href="#") الدوري الممتاز (ب)
+                    .dropdown-divider
+                    |
+                    |
+                    a.dropdown-item(href="#") الدوري الممتاز (ج)
+                li.nav-item
+                  a.nav-link(href="#") مباريات اليوم
+                li.nav-item
+                  a.nav-link(href="#") فيديوهات
+                li.nav-item
+                  a.nav-link(href="#") من نحن
+                li.nav-item
+                  a.nav-link(href="#") اتصل بنا
     // end header
     |
     |
-    // start content
-    .content
-      .container
-        .row.box_top_player.dir-right.txt-right
-          .col-sm-12.title.txt-right.dir-right
-            h5: span قائمة افضل الاعبين
-          .col-sm-12.col-md-4.col-lg-3.mb-4
-            .top-plyer
-              h6 افضل لاعب (#[span  الاسبوع الاول ])
-              img(src="image/About_truka.jfif", alt="About_truka")
-              ul.p-0.mb-0
-                li الدوري :
-                  span المصري الممتاز
-                li الاسم : 
-                  span محمد ابو تريكة
-                li المكان : 
-                  span صانع العاب
-                li رقم الاعب : 
-                  span 22
-          .col-sm-12.col-md-4.col-lg-3.mb-4
-            .top-plyer
-              h6 افضل لاعب (#[span  الاسبوع الاول ])
-              img(src="image/About_truka.jfif", alt="About_truka")
-              ul.p-0.mb-0
-                li الدوري :
-                  span المصري الممتاز
-                li الاسم : 
-                  span محمد ابو تريكة
-                li المكان : 
-                  span صانع العاب
-                li رقم الاعب : 
-                  span 22
-          .col-sm-12.col-md-4.col-lg-3.mb-4
-            .top-plyer
-              h6 افضل لاعب (#[span  الاسبوع الاول ])
-              img(src="image/About_truka.jfif", alt="About_truka")
-              ul.p-0.mb-0
-                li الدوري :
-                  span المصري الممتاز
-                li الاسم : 
-                  span محمد ابو تريكة
-                li المكان : 
-                  span صانع العاب
-                li رقم الاعب : 
-                  span 22
-          .col-sm-12.col-md-6.col-lg-3.mb-4.mx-md-auto
-            .top-plyer
-              h6 افضل لاعب (#[span  الاسبوع الاول ])
-              img(src="image/About_truka.jfif", alt="About_truka")
-              ul.p-0.mb-0
-                li الدوري :
-                  span المصري الممتاز
-                li الاسم : 
-                  span محمد ابو تريكة
-                li المكان : 
-                  span صانع العاب
-                li رقم الاعب : 
-                  span 22
-        .row.news_value
-          .col-sm-12.title.txt-right.dir-right
-            h5: span اهم الاخبار الاسبوعيه
-          .col-sm-12.col-md-8.dir-right.txt-right.mb-4
-            .news
-              div(id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel")
-                div.carousel-inner
-                  div.carousel-item.active
-                    img(src="image/ball-1.jfif" class="d-block w-100" alt="..." width="500px" height="500px")
-                    .ditlist
-                      h6 صانع العاب الافضل 1
-                      p الاخبار الحصريه  تاتي من اصل الحدث في زمن متغير ليس مرتبط بتوقيت معين لذك لنحن في كل وقت مستعدين
-                  div.carousel-item
-                    img(src="image/ball-2.jpg" class="d-block w-100" alt="..." width="500px" height="500px")
-                    .ditlist
-                      h6 صانع العاب الافضل 2
-                      p الاخبار الحصريه  تاتي من اصل الحدث في زمن متغير ليس مرتبط بتوقيت معين لذك لنحن في كل وقت مستعدين
-                  div.carousel-item
-                    img(src="image/ball-3.webp" class="d-block w-100" alt="..." width="500px" height="500px")
-                    .ditlist
-                      h6 صانع العاب الافضل 3
-                      p الاخبار الحصريه  تاتي من اصل الحدث في زمن متغير ليس مرتبط بتوقيت معين لذك لنحن في كل وقت مستعدين
-                  div.carousel-item
-                    img(src="image/ball-4.jpg" class="d-block w-100" alt="..." width="500px" height="500px")
-                    .ditlist
-                      h6 صانع العاب الافضل 4
-                      p الاخبار الحصريه  تاتي من اصل الحدث في زمن متغير ليس مرتبط بتوقيت معين لذك لنحن في كل وقت مستعدين                                                                  
-                a(class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev")
-                  i.fal.fa-chevron-left
-                  span.sr-only Previous
-                a(class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next")
-                  i.fal.fa-chevron-right
-                  span.sr-only Next
-          .col-sm-12.col-md-4.dir-right.txt-right.mb-4
-            .top_value
-              table.table.table-striped
-                caption الإحصاء
-                thead
-                  tr
-                    th(scope="col") اللاعب / المكان
-                    th(scope="col") النادي
-                    th(scope="col") القيمة
-                tbody
-                  tr
-                    th(scope="row")
-                      span محمد ابو تريكة
-                      span صانع العاب
-                    td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    td #[span 72m] l.e
-                  tr
-                    th(scope="row")
-                      span محمد ابو تريكة
-                      span صانع العاب
-                    td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    td #[span 72m] l.e
-                  tr
-                    th(scope="row")
-                      span محمد ابو تريكة
-                      span صانع العاب
-                    td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    td #[span 72m] l.e 
-                  tr
-                    th(scope="row")
-                      span محمد ابو تريكة
-                      span صانع العاب
-                    td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    td #[span 72m] l.e 
-                  tr
-                    th(scope="row")
-                      span محمد ابو تريكة
-                      span صانع العاب
-                    td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    td #[span 72m] l.e   
-        .row.match
-          .col-sm-12.title.txt-right.dir-right
-            h5: span اهم المباريات
-          .col-sm-12.col-md-6.dir-right.txt-right.mb-4
-            h5.date 2019 / 10 / 3
-            .list_match
-              ul.p-0
-                li
-                  span الاهلي المصري
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                li
-                  span pm 05.30
-                  span vs
-                li
-                  span الاهلي المصري               
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-              ul.p-0
-                li
-                  span الاهلي المصري
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                li
-                  span pm 05.30
-                  span vs
-                li
-                  span الاهلي المصري               
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-              ul.p-0
-                li
-                  span الاهلي المصري
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                li
-                  span pm 05.30
-                  span vs
-                li
-                  span الاهلي المصري               
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px") 
-          .col-sm-12.col-md-6.dir-right.txt-right.mb-4
-            h5.date 2020 / 3 / 25
-            .list_match
-              ul.p-0
-                li
-                  span الاهلي المصري
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                li
-                  span pm 05.30
-                  span vs
-                li
-                  span الاهلي المصري               
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-              ul.p-0
-                li
-                  span الاهلي المصري
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                li
-                  span pm 05.30
-                  span vs
-                li
-                  span الاهلي المصري               
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-              ul.p-0
-                li
-                  span الاهلي المصري
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                li
-                  span pm 05.30
-                  span vs
-                li
-                  span الاهلي المصري               
-                  span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")                                                   
-        .row.top_video
-          .col-sm-12.title.txt-right.dir-right
-            h5: span افضل الفيديوهات
-          .col-sm-12.mb-4
-            .embed-responsive.embed-responsive-16by9
-              iframe(class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen)
-    // end content
+    block Content_page
+      // start content
+      .content
+        .container
+          .row.box_top_player.dir-right.txt-right.mb-5
+            .col-sm-12.title.txt-right.dir-right
+              h5: span قائمة افضل الاعبين
+            .col-sm-12.col-md-4.col-lg-3.mb-4
+              .top-plyer
+                h6 افضل لاعب (#[span  الاسبوع الاول ])
+                img(src="image/About_truka.jfif", alt="About_truka")
+                ul.p-0.mb-0
+                  li الدوري :
+                    span المصري الممتاز
+                  li الاسم : 
+                    span محمد ابو تريكة
+                  li المكان : 
+                    span صانع العاب
+                  li رقم الاعب : 
+                    span 22
+            .col-sm-12.col-md-4.col-lg-3.mb-4
+              .top-plyer
+                h6 افضل لاعب (#[span  الاسبوع الاول ])
+                img(src="image/About_truka.jfif", alt="About_truka")
+                ul.p-0.mb-0
+                  li الدوري :
+                    span المصري الممتاز
+                  li الاسم : 
+                    span محمد ابو تريكة
+                  li المكان : 
+                    span صانع العاب
+                  li رقم الاعب : 
+                    span 22
+            .col-sm-12.col-md-4.col-lg-3.mb-4
+              .top-plyer
+                h6 افضل لاعب (#[span  الاسبوع الاول ])
+                img(src="image/About_truka.jfif", alt="About_truka")
+                ul.p-0.mb-0
+                  li الدوري :
+                    span المصري الممتاز
+                  li الاسم : 
+                    span محمد ابو تريكة
+                  li المكان : 
+                    span صانع العاب
+                  li رقم الاعب : 
+                    span 22
+            .col-sm-12.col-md-6.col-lg-3.mb-4.mx-md-auto
+              .top-plyer
+                h6 افضل لاعب (#[span  الاسبوع الاول ])
+                img(src="image/About_truka.jfif", alt="About_truka")
+                ul.p-0.mb-0
+                  li الدوري :
+                    span المصري الممتاز
+                  li الاسم : 
+                    span محمد ابو تريكة
+                  li المكان : 
+                    span صانع العاب
+                  li رقم الاعب : 
+                    span 22
+          .row.news_value.mb-5
+            .col-sm-12.title.txt-right.dir-right
+              h5: span اهم الاخبار الاسبوعيه
+            .col-sm-12.col-md-8.dir-right.txt-right.mb-4
+              .news
+                div(id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel")
+                  div.carousel-inner
+                    div.carousel-item.active
+                      img(src="image/ball-1.jfif" class="d-block w-100" alt="..." width="500px" height="500px")
+                      .ditlist
+                        h6 صانع العاب الافضل 1
+                        p الاخبار الحصريه  تاتي من اصل الحدث في زمن متغير ليس مرتبط بتوقيت معين لذك لنحن في كل وقت مستعدين
+                    div.carousel-item
+                      img(src="image/ball-2.jpg" class="d-block w-100" alt="..." width="500px" height="500px")
+                      .ditlist
+                        h6 صانع العاب الافضل 2
+                        p الاخبار الحصريه  تاتي من اصل الحدث في زمن متغير ليس مرتبط بتوقيت معين لذك لنحن في كل وقت مستعدين
+                    div.carousel-item
+                      img(src="image/ball-3.webp" class="d-block w-100" alt="..." width="500px" height="500px")
+                      .ditlist
+                        h6 صانع العاب الافضل 3
+                        p الاخبار الحصريه  تاتي من اصل الحدث في زمن متغير ليس مرتبط بتوقيت معين لذك لنحن في كل وقت مستعدين
+                    div.carousel-item
+                      img(src="image/ball-4.jpg" class="d-block w-100" alt="..." width="500px" height="500px")
+                      .ditlist
+                        h6 صانع العاب الافضل 4
+                        p الاخبار الحصريه  تاتي من اصل الحدث في زمن متغير ليس مرتبط بتوقيت معين لذك لنحن في كل وقت مستعدين                                                                  
+                  a(class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev")
+                    i.fal.fa-chevron-left
+                    span.sr-only Previous
+                  a(class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next")
+                    i.fal.fa-chevron-right
+                    span.sr-only Next
+            .col-sm-12.col-md-4.dir-right.txt-right.mb-4
+              .top_value
+                table.table.table-striped
+                  caption الإحصاء
+                  thead
+                    tr
+                      th(scope="col") اللاعب / المكان
+                      th(scope="col") النادي
+                      th(scope="col") القيمة
+                  tbody
+                    tr
+                      th(scope="row")
+                        span محمد ابو تريكة
+                        span صانع العاب
+                      td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      td #[span 72m] l.e
+                    tr
+                      th(scope="row")
+                        span محمد ابو تريكة
+                        span صانع العاب
+                      td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      td #[span 72m] l.e
+                    tr
+                      th(scope="row")
+                        span محمد ابو تريكة
+                        span صانع العاب
+                      td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      td #[span 72m] l.e 
+                    tr
+                      th(scope="row")
+                        span محمد ابو تريكة
+                        span صانع العاب
+                      td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      td #[span 72m] l.e 
+                    tr
+                      th(scope="row")
+                        span محمد ابو تريكة
+                        span صانع العاب
+                      td: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      td #[span 72m] l.e   
+          .row.match.mb-5
+            .col-sm-12.title.txt-right.dir-right
+              h5: span اهم المباريات
+            .col-sm-12.col-md-6.dir-right.txt-right.mb-4
+              h5.date 2019 / 10 / 3
+              .list_match
+                ul.p-0
+                  li
+                    span الاهلي المصري
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  li
+                    span pm 05.30
+                    span vs
+                  li
+                    span الاهلي المصري               
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                ul.p-0
+                  li
+                    span الاهلي المصري
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  li
+                    span pm 05.30
+                    span vs
+                  li
+                    span الاهلي المصري               
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                ul.p-0
+                  li
+                    span الاهلي المصري
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  li
+                    span pm 05.30
+                    span vs
+                  li
+                    span الاهلي المصري               
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px") 
+            .col-sm-12.col-md-6.dir-right.txt-right.mb-4
+              h5.date 2020 / 3 / 25
+              .list_match
+                ul.p-0
+                  li
+                    span الاهلي المصري
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  li
+                    span pm 05.30
+                    span vs
+                  li
+                    span الاهلي المصري               
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                ul.p-0
+                  li
+                    span الاهلي المصري
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  li
+                    span pm 05.30
+                    span vs
+                  li
+                    span الاهلي المصري               
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                ul.p-0
+                  li
+                    span الاهلي المصري
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  li
+                    span pm 05.30
+                    span vs
+                  li
+                    span الاهلي المصري               
+                    span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")                                                   
+          .row.top_video
+            .col-sm-12.title.txt-right.dir-right
+              h5: span افضل الفيديوهات
+            .col-sm-12.mb-4
+              .embed-responsive.embed-responsive-16by9
+                iframe(class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen)
+      // end content
     |
     |
     // start footer
