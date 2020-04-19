@@ -18,5 +18,26 @@
             }
         }
     }
+
+    // edit meida class box-news
+    .box-news {
+        .logo_club img {
+            width: 70px;
+            height: 70px;
+        }
+        .logo_section img {
+            width: 30px;
+            height: 35px;
+        }
+        .box-text {
+            padding: 10px 105px 10px 5px !important;
+            h3 {
+                font-size: large !important;
+            }
+            p {
+                font-size: small !important;
+            }
+        }
+    }
 }
 // end @media 767px
