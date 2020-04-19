@@ -1,0 +1,118 @@
+//- import page
+extends index.pug
+
+block Title_pages
+  title Grinta | مباريات اليوم
+
+block Link_pages
+  ul.navbar-nav.ml-auto.p-0
+    li.nav-item
+      a.nav-link(href="index.html") الرئيسية 
+        span.sr-only (current)
+    li.nav-item
+      a.nav-link(href="news.html") الاخبار
+    li.nav-item.dropdown|
+      |
+      a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") قائمة الدوري
+      .dropdown-menu.txt-right.dir-right(aria-labelledby="navbarDropdown")|
+        |
+        a.dropdown-item(href="#") الدوري الممتاز (ا)
+        |
+        |
+        a.dropdown-item(href="#") الدوري الممتاز (ب)
+        .dropdown-divider
+        |
+        |
+        a.dropdown-item(href="#") الدوري الممتاز (ج)
+    li.nav-item.active
+      a.nav-link(href="matches.html") مباريات اليوم
+    li.nav-item
+      a.nav-link(href="#") فيديوهات
+    li.nav-item
+      a.nav-link(href="#") من نحن
+    li.nav-item
+      a.nav-link(href="#") اتصل بنا
+
+block Content_page                                                         
+  .matches
+    .container
+      .row.mb-5
+        .col-sm-12.title.txt-right.dir-right
+          h5: span جدول المباريات    
+        .col-sm-12.dir-right.txt-right.mb-4
+          form
+            .form-row
+              .col
+                label(for="exampleFormControlSelect1") اختار الدرجة
+                select(class="form-control rounded-0" id="exampleFormControlSelect1")
+                  option الدوري الممتاز (ا)
+                  option الدوري الممتاز (ب)
+                  option الدوري الممتاز (ج)
+                  option الدوري الممتاز (د)
+              .col
+                label(for="exampleFormControlInput1") حدد التاريخ
+                input(type="date" class="form-control rounded-0" id="exampleFormControlInput1" placeholder="اكتب هنا!")
+      .row
+        .col-sm-12.dir-right.txt-right.my-4.match
+          h5.date 2019 / 10 / 3
+          .list_match
+            ul.p-0
+              li
+                span الاهلي المصري
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                span 3
+              li
+                span pm 05.30
+                span vs
+              li
+                span الاهلي المصري               
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                span 5
+            ul.p-0
+              li
+                span الاهلي المصري
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                span 3
+              li
+                span pm 05.30
+                span vs
+              li
+                span الاهلي المصري               
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                span 5
+            ul.p-0
+              li
+                span الاهلي المصري
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                span 3
+              li
+                span pm 05.30
+                span vs
+              li
+                span الاهلي المصري               
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px") 
+                span 5
+            ul.p-0
+              li
+                span الاهلي المصري
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                span 3
+              li
+                span pm 05.30
+                span vs
+              li
+                span الاهلي المصري               
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px") 
+                span 5
+            ul.p-0
+              li
+                span الاهلي المصري
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                span 3
+              li
+                span pm 05.30
+                span vs
+              li
+                span الاهلي المصري               
+                span: img(src="image/7.png", alt="al ahly" width="50px" height="50px") 
+                span 5                                

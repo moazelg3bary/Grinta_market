@@ -153,6 +153,11 @@
                     }
                     li {
                         display: inline-block;
+                        vertical-align: middle;
+                        span:last-of-type {
+                            padding: 5px;
+                            display: block;
+                        }                        
                         span:first-of-type {
                             display: block;
                             padding: 5px;
@@ -185,7 +190,7 @@
 }
 // end style content
 
-// start style content_About-Page
+// start style content_News
 .news {
     padding: 50px 0;
     .container {
@@ -264,4 +269,71 @@
         }
     }
 }
-// end style content_About-Page
+// end style content_News
+
+// start style content_Matches
+.matches {
+    padding: 50px 0;
+    .container {
+        background-color: #eee;
+        // use mixin sass
+        @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);
+        .row {
+            background-color: #fff;
+            // use mixin sass
+            @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);
+            .match {
+                .date {
+                    color: #fff;
+                    padding: 5px 0;
+                    margin-bottom: 0;
+                    text-align: center;
+                    background-color: $mainColor_2;
+                }     
+                .list_match {
+                    color: #fff;
+                    padding: 12px 0;
+                    cursor: pointer;
+                    overflow-x: auto;
+                    background-color: $mainColor_1;
+                    ul {
+                        list-style: none;
+                        margin-bottom: 0;
+                        text-align: center;
+                        white-space: nowrap;
+                        &:not(:last-of-type) {
+                            margin-bottom: 1rem;
+                        }
+                        li {
+                            display: inline-block;
+                            vertical-align: middle;
+                            span:last-of-type {
+                                padding: 5px;
+                                display: block;
+                            }
+                            span:first-of-type {
+                                display: block;
+                                padding: 5px;
+                            }
+                            &:nth-of-type(2) span {
+                                font-size: small;
+                                &:first-of-type {
+                                    margin: 0 15px;
+                                    text-transform: $text-upper;
+                                }
+                                &:last-of-type {
+                                    color: #fff;
+                                    padding: 2px 20px;
+                                    display: inline-block;
+                                    text-transform: $text-upper;                                
+                                    background-color: $mainColor_2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }        
+        }    
+    }
+}
+// end style content_Matches
