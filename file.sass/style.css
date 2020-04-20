@@ -498,6 +498,56 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   background-color: #2f2f75;
 }
 
+.about {
+  padding: 50px 0;
+}
+.about .container {
+  background-color: #eee;
+  -o-box-shadow: 0px 2px 8px -5px #000;
+  -ms-box-shadow: 0px 2px 8px -5px #000;
+  -moz-box-shadow: 0px 2px 8px -5px #000;
+  -webkit-box-shadow: 0px 2px 8px -5px #000;
+  box-shadow: 0px 2px 8px -5px #000;
+}
+.about .container .row {
+  background-color: #fff;
+  -o-box-shadow: 0px 2px 8px -5px #000;
+  -ms-box-shadow: 0px 2px 8px -5px #000;
+  -moz-box-shadow: 0px 2px 8px -5px #000;
+  -webkit-box-shadow: 0px 2px 8px -5px #000;
+  box-shadow: 0px 2px 8px -5px #000;
+}
+.about .container .row .cont {
+  padding: 5px;
+  background-color: #191b48;
+}
+.about .container .row .cont img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.about .container .row .text h3 {
+  color: #fff;
+  padding: 6px;
+  display: inline-block;
+  background-color: #2f2f75;
+}
+.about .container .row .text p {
+  padding: 20px 0;
+}
+.about .container .row .our_story {
+  color: #fff;
+  padding: 20px 50px;
+  text-align: center;
+  background-color: #191b48;
+}
+.about .container .row .our_story h3 {
+  padding: 6px;
+  color: #fff;
+  display: inline-block;
+  background-color: #2f2f75;
+}
+
 footer {
   background-color: #2f2f75;
 }

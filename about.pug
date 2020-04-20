@@ -34,5 +34,56 @@ block Link_pages
       a.nav-link(href="#") اتصل بنا
 
 block Content_page
-                                                  
-        
+  .about
+    .container
+      .row.mb-5
+        .col-sm-12.title.txt-right.dir-right
+          h5: span من نحن  
+        .col-sm-12.col-md-6.text-center.mb-4
+          .cont.shadow-sm
+            img(src="image/logo-3.jpeg", alt="grinta")
+        .col-sm-12.col-md-6.text.txt-right.dir-right.mb-4
+          h3 جرينتا ماركيت
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      .row.mb-5
+        .col-sm-12.my-4
+          .our_story
+            h3 قصتنا
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus iure atque quod numquam inventore minima dolorem nesciunt! Expedita ex ratione quis animi assumenda commodi doloribus aliquid id facere vero!
+      .row
+        .col-sm-12.what_say.my-4
+          div(id="carouselExampleCaptions" class="carousel slide" data-ride="carousel")
+            ol.carousel-indicators
+              li(data-target="#carouselExampleCaptions" data-slide-to="0" class="active"): i.fas.fa-futbol
+              li(data-target="#carouselExampleCaptions" data-slide-to="1"): i.fas.fa-futbol
+              li(data-target="#carouselExampleCaptions" data-slide-to="2"): i.fas.fa-futbol
+              li(data-target="#carouselExampleCaptions" data-slide-to="3"): i.fas.fa-futbol
+            </ol>
+            div.carousel-inner
+              div.carousel-item.active
+                img(src="image/About_truka.jfif" class="d-block rounded-circle" alt="...")
+                div(class="carousel-caption d-none d-md-block")
+                  h5 First slide label 1
+                  p Nulla vitae elit libero, a pharetra augue mollis interdum.   
+              div.carousel-item
+                img(src="image/About_truka.jfif" class="d-block rounded-circle" alt="...")
+                div(class="carousel-caption d-none d-md-block")
+                  h5 First slide label 2
+                  p Nulla vitae elit libero, a pharetra augue mollis interdum. 
+              div.carousel-item
+                img(src="image/About_truka.jfif" class="d-block rounded-circle" alt="...")
+                div(class="carousel-caption d-none d-md-block")
+                  h5 First slide label 3
+                  p Nulla vitae elit libero, a pharetra augue mollis interdum. 
+              div.carousel-item
+                img(src="image/About_truka.jfif" class="d-block rounded-circle" alt="...")
+                div(class="carousel-caption d-none d-md-block")
+                  h5 First slide label 4
+                  p Nulla vitae elit libero, a pharetra augue mollis interdum.                                                              
+            a(class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev")
+              span(class="carousel-control-prev-icon" aria-hidden="true")
+              span.sr-only Previous
+            a(class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next")
+              span(class="carousel-control-next-icon" aria-hidden="true")
+              span.sr-only Next

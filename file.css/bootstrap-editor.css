@@ -6,5 +6,27 @@
 .table-striped tbody tr:nth-of-type(even) {
     background-color: rgba(0, 0, 0, 0.05);
 }
-
+.what_say .carousel .carousel-inner .carousel-item  {
+    color: #fff;
+    padding: 20px 0;
+    background-color: #191b48;
+}
+.what_say .carousel .carousel-inner .carousel-item img {
+    width: 165px;
+    height: auto;
+    margin:  0 auto;
+}
+.what_say .carousel .carousel-inner .carousel-item .carousel-caption {
+    position: static;
+}
+.what_say .carousel .carousel-indicators li  {
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    color: #a7a7a7;
+    background-color: transparent;
+}
+.what_say .carousel .carousel-indicators .active {
+    color: #fff;
+}
 /* end edit class Bootstrap 4 */
