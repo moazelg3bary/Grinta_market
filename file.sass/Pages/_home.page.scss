@@ -58,7 +58,7 @@
             background-color: #fff;
             // use mixin sass
             @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);    
-            .news {
+            .top_news {
                 .ditlist {
                     left: 0;
                     bottom: 0;
