@@ -1,0 +1,68 @@
+//- import page
+extends index.pug
+
+block Title_pages
+  title Grinta | اتصل بنا
+
+block Link_pages
+  ul.navbar-nav.ml-auto.p-0
+    li.nav-item
+      a.nav-link(href="index.html") الرئيسية 
+        span.sr-only (current)
+    li.nav-item
+      a.nav-link(href="news.html") الاخبار
+    li.nav-item.dropdown|
+      |
+      a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") قائمة الدوري
+      .dropdown-menu.txt-right.dir-right(aria-labelledby="navbarDropdown")|
+        |
+        a.dropdown-item(href="#") الدوري الممتاز (ا)
+        |
+        |
+        a.dropdown-item(href="#") الدوري الممتاز (ب)
+        .dropdown-divider
+        |
+        |
+        a.dropdown-item(href="#") الدوري الممتاز (ج)
+    li.nav-item
+      a.nav-link(href="matches.html") مباريات اليوم
+    li.nav-item
+      a.nav-link(href="video.html") فيديوهات
+    li.nav-item
+      a.nav-link(href="about.html") من نحن
+    li.nav-item.active
+      a.nav-link(href="contact.html") اتصل بنا
+
+block Content_page
+  .contact
+    .container
+      .row.mb-5
+        .col-sm-12.title.txt-right.dir-right
+          h5: span اتصل بنا
+        .col-sm-12.col-md-6.text-center.mb-4
+          .cont.shadow-sm
+            img(src="image/logo-3.jpeg", alt="grinta")
+        .col-sm-12.col-md-6.text.txt-right.dir-right.mb-4
+          h3 امكانيات التواصل
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      .row.mb-5
+        .col-sm-12.contact_box
+          h2.title-section شارك معنا
+          a Developers © All Rights Reserved
+        .col-sm-12.col-md-6.list_faq.mb-4
+          img(src="image/contact.png", alt="grinta")
+        .col-sm-12.col-md-6.txt-right.dir-right.mb-4
+          form
+            .form-group
+              label(for="exampleFormControlInput1") الاسم
+              input(type="text" class="form-control" id="exampleFormControlInput1" placeholder="اكتب الاسم هنا!")
+            .form-group
+              label(for="exampleFormControlInput1") البريد الاكتروني
+              input(type="text" class="form-control" id="exampleFormControlInput1" placeholder="اكتب البريد الاكتروني هنا!")
+            .form-group
+              label(for="exampleFormControlInput1") العنوان
+              input(type="text" class="form-control" id="exampleFormControlInput1" placeholder="اكتب العنوان هنا!")
+            .form-group
+              label(for="exampleFormControlTextarea1") الموضوع
+              textarea(class="form-control" id="exampleFormControlTextarea1" rows="3")
