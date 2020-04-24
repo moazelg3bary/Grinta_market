@@ -1,0 +1,69 @@
+//- import page
+extends index.pug
+
+block Title_pages
+  title Grinta | الدوري 2
+
+block Link_pages
+  ul.navbar-nav.ml-auto.p-0
+    li.nav-item
+      a.nav-link(href="index.html") الرئيسية 
+        span.sr-only (current)
+    li.nav-item
+      a.nav-link(href="news.html") الاخبار
+    li.nav-item.dropdown|
+      |
+      a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") قائمة الدوري
+      .dropdown-menu.txt-right.dir-right(aria-labelledby="navbarDropdown")|
+        |
+        a.dropdown-item(href="permier_2.html") الدوري الممتاز (ا)
+        |
+        |
+        a.dropdown-item(href="#") الدوري الممتاز (ب)
+        .dropdown-divider
+        |
+        |
+        a.dropdown-item(href="#") الدوري الممتاز (ج)
+    li.nav-item
+      a.nav-link(href="matches.html") مباريات اليوم
+    li.nav-item
+      a.nav-link(href="video.html") فيديوهات
+    li.nav-item
+      a.nav-link(href="about.html") من نحن
+    li.nav-item.active
+      a.nav-link(href="contact.html") اتصل بنا
+
+block Content_page
+  .permier
+    .container
+      .row.mb-5
+        .col-sm-12.title.txt-right.dir-right
+          h5: span الدوري الممتاز (ا)
+        .col-sm-12.col-md-6.mb-4
+          .logo
+            img(src="image/egy2_b.png", alt="perimer")             
+        .col-sm-12.col-md-6.txt-right.dir-right.mb-4
+          .cont
+            h3 نبذه عن الدوري
+            .info
+              ul.p-0
+                li مستوى الدوري : 
+                  span لدرجة الأولى - مصر
+                li عدد الفرق : 
+                  span 18 فريقًا
+                li اللاعبين : 
+                  span 560
+                li قيمة السوق : 
+                  span 221 ألف يورو
+              ul.p-0
+                li بطل الدوري : 
+                  span الأهلي القاهرة 41 مرة
+                li العمر : 
+                  span 26،9 سنة
+                li الفائز بالبطولة : 
+                  span  الأهلي القاهرة
+                li أغلى لاعب : 
+                  span رمضان صبحي 3.20 مليون يورو   
+            .value
+              span القيمة الجماليه للدوري
+              span 244.36 L.E                    

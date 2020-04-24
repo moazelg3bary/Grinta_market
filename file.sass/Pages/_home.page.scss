@@ -271,6 +271,68 @@
 }
 // end style content_News
 
+// start style content_permier
+.permier {
+    padding: 50px 0;
+    .container {
+        background-color: #eee;
+        // use mixin sass
+        @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);        
+        .row {
+            background-color: #fff;
+            // use mixin sass
+            @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);
+            .logo img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+            }
+            .cont {
+                h3 {
+                    color: #fff;
+                    padding: 6px;
+                    display: inline-block;
+                    background-color: $mainColor_2;
+                }
+                .info {
+                    display: flex;
+                    padding: 20px 0;
+                    flex-direction: row;
+                    border-bottom: 1px solid;                    
+                    justify-content: space-between;
+                    ul {
+                        margin: 0;
+                        list-style: none;
+                        display: inline-block;
+                        li {
+                            margin: 5px 0;
+                            font-size: smaller;
+                            span {
+                                margin-right: 5px;
+                                font-size: small;
+                            }
+                        }
+                    }
+                }
+                .value {
+                    padding: 20px 0;
+                    text-align: center;                    
+                    display: inline-block;
+                    span {
+                        display: block;
+                        &:last-of-type {
+                            color: #a9a9a9;
+                            margin-top: 10px;                            
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }                       
+        }
+    }
+}
+// end style content_permier
+
 // start style content_Matches
 .matches {
     padding: 50px 0;
