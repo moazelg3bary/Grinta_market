@@ -400,7 +400,49 @@
                         }
                     }
                 }
-            }                        
+            } 
+            .top-plyer {
+                border: 1px solid #000;
+                // use mixin sass
+                @include browsers(transition, all .2s linear);
+                &:hover {
+                    // use mixin sass
+                    @include browsers(transform, translate(0px, -3px), o ms moz webkit);
+                    @include browsers(box-shadow, 0px 2px 7px -1px #404040, o ms moz webkit);
+                }
+                &:not(:last-of-type) {
+                    margin-bottom: 25px;
+                }
+                h6 {
+                    color: #fff;
+                    padding: 8px 0;
+                    margin-bottom: 0;
+                    text-align: center;
+                    // use var sass
+                    background-color: $mainColor_2;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 100%;            
+                }
+                ul {
+                    color: #fff;
+                    list-style: none;
+                    padding: 10px 15px !important;
+                    // use var sass
+                    background-color: $mainColor_1;
+                    li {
+                        font-size: 14px;
+                        padding-bottom: 5px;
+                        span {
+                            font-size: 12px;
+                            color: #cccccc;                  
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }                                
         }
     }
 }

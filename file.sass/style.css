@@ -560,6 +560,52 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   text-transform: uppercase;
   background-color: #2f2f75;
 }
+.permier .container .row .top-plyer {
+  border: 1px solid #000;
+  transition: all 0.2s linear;
+}
+.permier .container .row .top-plyer:hover {
+  -o-transform: translate(0px, -3px);
+  -ms-transform: translate(0px, -3px);
+  -moz-transform: translate(0px, -3px);
+  -webkit-transform: translate(0px, -3px);
+  transform: translate(0px, -3px);
+  -o-box-shadow: 0px 2px 7px -1px #404040;
+  -ms-box-shadow: 0px 2px 7px -1px #404040;
+  -moz-box-shadow: 0px 2px 7px -1px #404040;
+  -webkit-box-shadow: 0px 2px 7px -1px #404040;
+  box-shadow: 0px 2px 7px -1px #404040;
+}
+.permier .container .row .top-plyer:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+.permier .container .row .top-plyer h6 {
+  color: #fff;
+  padding: 8px 0;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #2f2f75;
+}
+.permier .container .row .top-plyer img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.permier .container .row .top-plyer ul {
+  color: #fff;
+  list-style: none;
+  padding: 10px 15px !important;
+  background-color: #191b48;
+}
+.permier .container .row .top-plyer ul li {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.permier .container .row .top-plyer ul li span {
+  font-size: 12px;
+  color: #cccccc;
+  margin-right: 7px;
+}
 
 .matches {
   padding: 50px 0;
