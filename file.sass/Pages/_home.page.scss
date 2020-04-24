@@ -328,7 +328,7 @@
                     }
                 }
             }
-            .list_permier {
+            .list_permier, .list_permier_league {
                 cursor: pointer;
                 border: 1px solid;
                 table {
@@ -352,55 +352,7 @@
                     }
                 }
             }  
-            .date {
-                color: #fff;
-                padding: 5px 0;
-                margin-bottom: 0;
-                text-align: center;
-                background-color: $mainColor_2;
-            }     
-            .list_match {
-                color: #fff;
-                padding: 12px 0;
-                cursor: pointer;
-                overflow-x: auto;
-                background-color: $mainColor_1;
-                ul {
-                    list-style: none;
-                    margin-bottom: 0;
-                    text-align: center;
-                    white-space: nowrap;
-                    &:not(:last-of-type) {
-                        margin-bottom: 1rem;
-                    }
-                    li {
-                        display: inline-block;
-                        vertical-align: middle;
-                        span:last-of-type {
-                            padding: 5px;
-                            display: block;
-                        }                        
-                        span:first-of-type {
-                            display: block;
-                            padding: 5px;
-                        }
-                        &:nth-of-type(2) span {
-                            font-size: small;
-                            &:first-of-type {
-                                margin: 0 15px;
-                                text-transform: $text-upper;
-                            }
-                            &:last-of-type {
-                                color: #fff;
-                                padding: 2px 20px;
-                                display: inline-block;
-                                text-transform: $text-upper;                                
-                                background-color: $mainColor_2;
-                            }
-                        }
-                    }
-                }
-            } 
+
             .top-plyer {
                 border: 1px solid #000;
                 // use mixin sass

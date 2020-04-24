@@ -492,11 +492,11 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   margin-top: 10px;
   font-size: x-large;
 }
-.permier .container .row .list_permier {
+.permier .container .row .list_permier, .permier .container .row .list_permier_league {
   cursor: pointer;
   border: 1px solid;
 }
-.permier .container .row .list_permier table caption {
+.permier .container .row .list_permier table caption, .permier .container .row .list_permier_league table caption {
   color: #fff;
   padding: 0;
   font-size: 21px;
@@ -505,60 +505,11 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   caption-side: top;
   background-color: #2f2f75;
 }
-.permier .container .row .list_permier table thead {
+.permier .container .row .list_permier table thead, .permier .container .row .list_permier_league table thead {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.permier .container .row .list_permier table tbody tr td {
+.permier .container .row .list_permier table tbody tr td, .permier .container .row .list_permier_league table tbody tr td {
   vertical-align: middle;
-}
-.permier .container .row .date {
-  color: #fff;
-  padding: 5px 0;
-  margin-bottom: 0;
-  text-align: center;
-  background-color: #2f2f75;
-}
-.permier .container .row .list_match {
-  color: #fff;
-  padding: 12px 0;
-  cursor: pointer;
-  overflow-x: auto;
-  background-color: #191b48;
-}
-.permier .container .row .list_match ul {
-  list-style: none;
-  margin-bottom: 0;
-  text-align: center;
-  white-space: nowrap;
-}
-.permier .container .row .list_match ul:not(:last-of-type) {
-  margin-bottom: 1rem;
-}
-.permier .container .row .list_match ul li {
-  display: inline-block;
-  vertical-align: middle;
-}
-.permier .container .row .list_match ul li span:last-of-type {
-  padding: 5px;
-  display: block;
-}
-.permier .container .row .list_match ul li span:first-of-type {
-  display: block;
-  padding: 5px;
-}
-.permier .container .row .list_match ul li:nth-of-type(2) span {
-  font-size: small;
-}
-.permier .container .row .list_match ul li:nth-of-type(2) span:first-of-type {
-  margin: 0 15px;
-  text-transform: uppercase;
-}
-.permier .container .row .list_match ul li:nth-of-type(2) span:last-of-type {
-  color: #fff;
-  padding: 2px 20px;
-  display: inline-block;
-  text-transform: uppercase;
-  background-color: #2f2f75;
 }
 .permier .container .row .top-plyer {
   border: 1px solid #000;
