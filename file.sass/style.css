@@ -471,6 +471,9 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   list-style: none;
   display: inline-block;
 }
+.permier .container .row .cont .info ul:first-of-type {
+  margin-left: 15px;
+}
 .permier .container .row .cont .info ul li {
   margin: 5px 0;
   font-size: smaller;

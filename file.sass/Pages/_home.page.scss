@@ -304,6 +304,9 @@
                         margin: 0;
                         list-style: none;
                         display: inline-block;
+                        &:first-of-type {
+                            margin-left: 15px;
+                        }
                         li {
                             margin: 5px 0;
                             font-size: smaller;

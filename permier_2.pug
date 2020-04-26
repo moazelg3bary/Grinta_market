@@ -11,7 +11,7 @@ block Link_pages
         span.sr-only (current)
     li.nav-item
       a.nav-link(href="news.html") الاخبار
-    li.nav-item.dropdown|
+    li.nav-item.dropdown.active|
       |
       a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") قائمة الدوري
       .dropdown-menu.txt-right.dir-right(aria-labelledby="navbarDropdown")|
@@ -19,11 +19,11 @@ block Link_pages
         a.dropdown-item(href="permier_2.html") الدوري الممتاز (ا)
         |
         |
-        a.dropdown-item(href="#") الدوري الممتاز (ب)
+        a.dropdown-item(href="permier_3.html") الدوري الممتاز (ب)
         .dropdown-divider
         |
         |
-        a.dropdown-item(href="#") الدوري الممتاز (ج)
+        a.dropdown-item(href="permier_4.html") الدوري الممتاز (ج)
     li.nav-item
       a.nav-link(href="matches.html") مباريات اليوم
     li.nav-item
@@ -38,189 +38,193 @@ block Content_page
     .container
       .row.mb-5
         .col-sm-12.title.txt-right.dir-right
-          h5: span الدوري الممتاز (ا)
-        .col-sm-12.col-md-6.mb-4
-          .logo
-            img(src="image/egy2_b.png", alt="perimer")             
-        .col-sm-12.col-md-6.txt-right.dir-right.mb-4
-          .cont
-            h3 نبذه عن الدوري
-            .info
-              ul.p-0
-                li مستوى الدوري : 
-                  span لدرجة الأولى - مصر
-                li عدد الفرق : 
-                  span 18 فريقًا
-                li اللاعبين : 
-                  span 560
-                li قيمة السوق : 
-                  span 221 ألف يورو
-              ul.p-0
-                li بطل الدوري : 
-                  span الأهلي القاهرة 41 مرة
-                li العمر : 
-                  span 26،9 سنة
-                li الفائز بالبطولة : 
-                  span  الأهلي القاهرة
-                li أغلى لاعب : 
-                  span رمضان صبحي 3.20 مليون يورو   
-            .value
-              span القيمة الجماليه للدوري
-              span 244.36 L.E
-      .row.mb-5
-        .col-sm-12.col-md-6.my-4.dir-right.txt-right
-          .list_permier
-            table.table.table-striped
-              caption هدافي الدوري
-              thead
-                tr
-                  th(scope="col") الاعب
-                  th(scope="col") الاهداف
-                  th(scope="col") التمريرات
-              tbody
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36   
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36  
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36  
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36  
-                tr
-                  th(scope="row") ابو تريكه
-                  td 23
-                  td 36
-        .col-sm-12.col-md-6.my-4.dir-right.txt-right
-          .list_permier_league
-            table.table.table-striped
-              caption ترتيب الدوري
-              thead
-                tr
-                  th(scope="col") النادي
-                  th(scope="col") المباريات
-                  th(scope="col") ك
-                  th(scope="col") خ
-                  th(scope="col") ت
-                  th(scope="col") نقاط
-              tbody
-                tr
-                  th(scope="row")
-                    img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    span الاهلي المصري
-                  td 32
-                  td 10
-                  td 3
-                  td 1
-                  td 49
-                tr
-                  th(scope="row")
-                    img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    span الاهلي المصري
-                  td 32
-                  td 10
-                  td 3
-                  td 1
-                  td 49
-                tr
-                  th(scope="row")
-                    img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    span الاهلي المصري
-                  td 32
-                  td 10
-                  td 3
-                  td 1
-                  td 49
-                tr
-                  th(scope="row")
-                    img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    span الاهلي المصري
-                  td 32
-                  td 10
-                  td 3
-                  td 1
-                  td 49
-                tr
-                  th(scope="row")
-                    img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    span الاهلي المصري
-                  td 32
-                  td 10
-                  td 3
-                  td 1
-                  td 49
-                tr
-                  th(scope="row")
-                    img(src="image/7.png", alt="al ahly" width="50px" height="50px")
-                    span الاهلي المصري
-                  td 32
-                  td 10
-                  td 3
-                  td 1
-                  td 49                                                                                                                                                              
-      .row.box_top_player.dir-right.txt-right.mb-5
-        .col-sm-12.title.txt-right.dir-right
-          h5: span قائمة افضل الاعبين
-        .col-sm-12.col-md-4.mb-4
-          .top-plyer
-            h6 افضل لاعب (#[span  الاسبوع الاول ])
-            img(src="image/About_truka.jfif", alt="About_truka")
-            ul.p-0.mb-0
-              li الدوري :
-                span المصري الممتاز
-              li الاسم : 
-                span محمد ابو تريكة
-              li المكان : 
-                span صانع العاب
-              li رقم الاعب : 
-                span 22    
-        .col-sm-12.col-md-4.mb-4
-          .top-plyer
-            h6 افضل لاعب (#[span  الاسبوع الاول ])
-            img(src="image/About_truka.jfif", alt="About_truka")
-            ul.p-0.mb-0
-              li الدوري :
-                span المصري الممتاز
-              li الاسم : 
-                span محمد ابو تريكة
-              li المكان : 
-                span صانع العاب
-              li رقم الاعب : 
-                span 22   
-        .col-sm-12.col-md-4.mb-4
-          .top-plyer
-            h6 افضل لاعب (#[span  الاسبوع الاول ])
-            img(src="image/About_truka.jfif", alt="About_truka")
-            ul.p-0.mb-0
-              li الدوري :
-                span المصري الممتاز
-              li الاسم : 
-                span محمد ابو تريكة
-              li المكان : 
-                span صانع العاب
-              li رقم الاعب : 
-                span 22   
+          block Title
+            h5: span الدوري الممتاز (ا)
+        block Logo
+          .col-sm-12.col-md-6.mb-4
+            .logo
+              img(src="image/egy2_b.png", alt="perimer")
+        block Info           
+          .col-sm-12.col-md-6.txt-right.dir-right.mb-4
+            .cont
+              h3 نبذه عن الدوري
+              .info
+                ul.p-0
+                  li مستوى الدوري : 
+                    span لدرجة الأولى - مصر
+                  li عدد الفرق : 
+                    span 18 فريقًا
+                  li اللاعبين : 
+                    span 560
+                  li قيمة السوق : 
+                    span 221 ألف يورو
+                ul.p-0
+                  li بطل الدوري : 
+                    span الأهلي القاهرة 41 مرة
+                  li العمر : 
+                    span 26،9 سنة
+                  li الفائز بالبطولة : 
+                    span  الأهلي القاهرة
+                  li أغلى لاعب : 
+                    span رمضان صبحي 3.20 مليون يورو   
+              .value
+                span القيمة الجماليه للدوري
+                span 244.36 L.E
+      block Content
+        .row.mb-5
+          .col-sm-12.col-md-6.my-4.dir-right.txt-right
+            .list_permier
+              table.table.table-striped
+                caption هدافي الدوري
+                thead
+                  tr
+                    th(scope="col") الاعب
+                    th(scope="col") الاهداف
+                    th(scope="col") التمريرات
+                tbody
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36   
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36  
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36  
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36  
+                  tr
+                    th(scope="row") ابو تريكه
+                    td 23
+                    td 36
+          .col-sm-12.col-md-6.my-4.dir-right.txt-right
+            .list_permier_league
+              table.table.table-striped
+                caption ترتيب الدوري
+                thead
+                  tr
+                    th(scope="col") النادي
+                    th(scope="col") المباريات
+                    th(scope="col") ك
+                    th(scope="col") خ
+                    th(scope="col") ت
+                    th(scope="col") نقاط
+                tbody
+                  tr
+                    th(scope="row")
+                      img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      span الاهلي المصري
+                    td 32
+                    td 10
+                    td 3
+                    td 1
+                    td 49
+                  tr
+                    th(scope="row")
+                      img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      span الاهلي المصري
+                    td 32
+                    td 10
+                    td 3
+                    td 1
+                    td 49
+                  tr
+                    th(scope="row")
+                      img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      span الاهلي المصري
+                    td 32
+                    td 10
+                    td 3
+                    td 1
+                    td 49
+                  tr
+                    th(scope="row")
+                      img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      span الاهلي المصري
+                    td 32
+                    td 10
+                    td 3
+                    td 1
+                    td 49
+                  tr
+                    th(scope="row")
+                      img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      span الاهلي المصري
+                    td 32
+                    td 10
+                    td 3
+                    td 1
+                    td 49
+                  tr
+                    th(scope="row")
+                      img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                      span الاهلي المصري
+                    td 32
+                    td 10
+                    td 3
+                    td 1
+                    td 49                                                                                                                                                              
+        .row.box_top_player.dir-right.txt-right.mb-5
+          .col-sm-12.title.txt-right.dir-right
+            h5: span قائمة افضل الاعبين
+          .col-sm-12.col-md-4.mb-4
+            .top-plyer
+              h6 افضل لاعب (#[span  الاسبوع الاول ])
+              img(src="image/About_truka.jfif", alt="About_truka")
+              ul.p-0.mb-0
+                li الدوري :
+                  span المصري الممتاز
+                li الاسم : 
+                  span محمد ابو تريكة
+                li المكان : 
+                  span صانع العاب
+                li رقم الاعب : 
+                  span 22    
+          .col-sm-12.col-md-4.mb-4
+            .top-plyer
+              h6 افضل لاعب (#[span  الاسبوع الاول ])
+              img(src="image/About_truka.jfif", alt="About_truka")
+              ul.p-0.mb-0
+                li الدوري :
+                  span المصري الممتاز
+                li الاسم : 
+                  span محمد ابو تريكة
+                li المكان : 
+                  span صانع العاب
+                li رقم الاعب : 
+                  span 22   
+          .col-sm-12.col-md-4.mb-4
+            .top-plyer
+              h6 افضل لاعب (#[span  الاسبوع الاول ])
+              img(src="image/About_truka.jfif", alt="About_truka")
+              ul.p-0.mb-0
+                li الدوري :
+                  span المصري الممتاز
+                li الاسم : 
+                  span محمد ابو تريكة
+                li المكان : 
+                  span صانع العاب
+                li رقم الاعب : 
+                  span 22   
                                                              
