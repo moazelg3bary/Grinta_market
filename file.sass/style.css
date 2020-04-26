@@ -582,6 +582,35 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 .permier .container .row .staff ul li > span span {
   margin-right: 6px;
 }
+.permier .container .row .box_info_player, .permier .container .row .box_Statistics_player {
+  border: 1px solid;
+  background-color: #191b48;
+}
+.permier .container .row .box_info_player h4, .permier .container .row .box_Statistics_player h4 {
+  color: #fff;
+  padding: 5px 0;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #2f2f75;
+}
+.permier .container .row .box_info_player ul, .permier .container .row .box_Statistics_player ul {
+  margin-bottom: 0;
+  list-style: none;
+  width: calc(100% / 2 - 10px);
+  display: inline-block;
+  padding: 10px !important;
+}
+.permier .container .row .box_info_player ul li, .permier .container .row .box_Statistics_player ul li {
+  color: #fff;
+  font-size: small;
+}
+.permier .container .row .box_info_player ul li:not(:last-of-type), .permier .container .row .box_Statistics_player ul li:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+.permier .container .row .box_info_player ul li span, .permier .container .row .box_Statistics_player ul li span {
+  font-size: smaller;
+  margin-right: 5px;
+}
 .permier .container .row .top-plyer {
   border: 1px solid #000;
   transition: all 0.2s linear;

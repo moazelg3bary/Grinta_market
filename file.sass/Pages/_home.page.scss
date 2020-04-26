@@ -421,6 +421,35 @@
                     }
                 }
             }
+            .box_info_player, .box_Statistics_player {
+                border: 1px solid;
+                background-color: $mainColor_1;
+                h4 {
+                    color: #fff;
+                    padding: 5px 0;
+                    margin-bottom: 0;
+                    text-align: center;
+                    background-color: $mainColor_2;
+                }
+                ul {
+                    margin-bottom: 0;
+                    list-style: none;
+                    width: calc(100% / 2 - 10px);
+                    display: inline-block;
+                    padding: 10px !important;                    
+                    li {
+                        color: #fff;                        
+                        font-size: small;
+                        &:not(:last-of-type) {
+                            margin-bottom: 5px;
+                        }
+                        span {
+                            font-size: smaller;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
             .top-plyer {
                 border: 1px solid #000;
                 // use mixin sass
