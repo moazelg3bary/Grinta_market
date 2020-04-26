@@ -331,7 +331,7 @@
                     }
                 }
             }
-            .list_permier, .list_permier_league {
+            .list_permier, .list_permier_league, .list_player {
                 cursor: pointer;
                 table {
                     border: 1px solid;
@@ -352,6 +352,7 @@
                         th {
                             font-size: small;
                             a {
+                                font-size: small;
                                 color: $mainColor_name;
                                 text-decoration: none;
                             }
@@ -361,8 +362,34 @@
                         }                 
                     }
                 }
-            }  
-
+            }
+            .list_player table tbody tr th {
+                overflow: hidden;
+                a {
+                    float: right;
+                    ul {
+                        margin: 0;
+                        list-style: none;
+                        li {
+                            display: inline-block;
+                            &:first-of-type {
+                                margin-left: 5px;
+                                vertical-align: top;
+                            }                           
+                            span {
+                                display: block;
+                                &:first-of-type {
+                                    font-size: small;
+                                }
+                                &:last-of-type {
+                                    color: #5d5b5b;
+                                    font-size: smaller;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
             .top-plyer {
                 border: 1px solid #000;
                 // use mixin sass

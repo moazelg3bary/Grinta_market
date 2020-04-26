@@ -495,13 +495,13 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   margin-top: 10px;
   font-size: x-large;
 }
-.permier .container .row .list_permier, .permier .container .row .list_permier_league {
+.permier .container .row .list_permier, .permier .container .row .list_permier_league, .permier .container .row .list_player {
   cursor: pointer;
 }
-.permier .container .row .list_permier table, .permier .container .row .list_permier_league table {
+.permier .container .row .list_permier table, .permier .container .row .list_permier_league table, .permier .container .row .list_player table {
   border: 1px solid;
 }
-.permier .container .row .list_permier table caption, .permier .container .row .list_permier_league table caption {
+.permier .container .row .list_permier table caption, .permier .container .row .list_permier_league table caption, .permier .container .row .list_player table caption {
   color: #fff;
   padding: 0;
   font-size: 21px;
@@ -510,18 +510,46 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   caption-side: top;
   background-color: #2f2f75;
 }
-.permier .container .row .list_permier table thead, .permier .container .row .list_permier_league table thead {
+.permier .container .row .list_permier table thead, .permier .container .row .list_permier_league table thead, .permier .container .row .list_player table thead {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.permier .container .row .list_permier table tbody tr th, .permier .container .row .list_permier_league table tbody tr th {
+.permier .container .row .list_permier table tbody tr th, .permier .container .row .list_permier_league table tbody tr th, .permier .container .row .list_player table tbody tr th {
   font-size: small;
 }
-.permier .container .row .list_permier table tbody tr th a, .permier .container .row .list_permier_league table tbody tr th a {
+.permier .container .row .list_permier table tbody tr th a, .permier .container .row .list_permier_league table tbody tr th a, .permier .container .row .list_player table tbody tr th a {
+  font-size: small;
   color: #1d75a3;
   text-decoration: none;
 }
-.permier .container .row .list_permier table tbody tr td, .permier .container .row .list_permier_league table tbody tr td {
+.permier .container .row .list_permier table tbody tr td, .permier .container .row .list_permier_league table tbody tr td, .permier .container .row .list_player table tbody tr td {
   vertical-align: middle;
+}
+.permier .container .row .list_player table tbody tr th {
+  overflow: hidden;
+}
+.permier .container .row .list_player table tbody tr th a {
+  float: right;
+}
+.permier .container .row .list_player table tbody tr th a ul {
+  margin: 0;
+  list-style: none;
+}
+.permier .container .row .list_player table tbody tr th a ul li {
+  display: inline-block;
+}
+.permier .container .row .list_player table tbody tr th a ul li:first-of-type {
+  margin-left: 5px;
+  vertical-align: top;
+}
+.permier .container .row .list_player table tbody tr th a ul li span {
+  display: block;
+}
+.permier .container .row .list_player table tbody tr th a ul li span:first-of-type {
+  font-size: small;
+}
+.permier .container .row .list_player table tbody tr th a ul li span:last-of-type {
+  color: #5d5b5b;
+  font-size: smaller;
 }
 .permier .container .row .top-plyer {
   border: 1px solid #000;
