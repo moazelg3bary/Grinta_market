@@ -351,6 +351,10 @@
                     tbody tr {
                         th {
                             font-size: small;
+                            a {
+                                color: $mainColor_name;
+                                text-decoration: none;
+                            }
                         }
                         td {
                             vertical-align: middle;

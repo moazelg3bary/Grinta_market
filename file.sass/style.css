@@ -516,6 +516,10 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 .permier .container .row .list_permier table tbody tr th, .permier .container .row .list_permier_league table tbody tr th {
   font-size: small;
 }
+.permier .container .row .list_permier table tbody tr th a, .permier .container .row .list_permier_league table tbody tr th a {
+  color: #1d75a3;
+  text-decoration: none;
+}
 .permier .container .row .list_permier table tbody tr td, .permier .container .row .list_permier_league table tbody tr td {
   vertical-align: middle;
 }
