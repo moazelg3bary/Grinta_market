@@ -1,33 +1,35 @@
 extends permier_2.pug
 
+block Title_pages
+  title Grinta | الفريق
+
 block Title
   h5: span الاهلي المصري
 
 block Logo
-  .col-sm-12.col-md-6.mb-4
+  .col-sm-12.col-md-3.mb-4
     .logo
-      img(src="image/egy2_b.png", alt="perimer")
-block Info           
-  .col-sm-12.col-md-6.txt-right.dir-right.mb-4
+      img(src="image/al_ahly_home.png", alt="perimer")
+block Info
+  .col-sm-12.col-md-2.my-5     
+  .col-sm-12.col-md-7.txt-right.dir-right.mb-4
     .cont
-      h3 نبذه عن الدوري
+      h3 نبذه عن الفريق
       .info
         ul.p-0
-          li مستوى الدوري : 
+          li درجة الدوري 
             span لدرجة الأولى - مصر
-          li عدد الفرق : 
-            span 18 فريقًا
-          li اللاعبين : 
-            span 560
-          li قيمة السوق : 
-            span 221 ألف يورو
-        ul.p-0
           li بطل الدوري : 
-            span الأهلي القاهرة 41 مرة
+            span الأهلي القاهرة 41 مرة 
+          li ترتيب ف الدوري : 
+            span  1                     
+          li الاستاد : 
+            span القاهرة الدولي
+        ul.p-0
+          li عدد الاعبين : 
+            span 18 لاعب
           li العمر : 
             span 26،9 سنة
-          li الفائز بالبطولة : 
-            span  الأهلي القاهرة
           li أغلى لاعب : 
             span رمضان صبحي 3.20 مليون يورو   
       .value
@@ -167,4 +169,78 @@ block Content
                       span الجناح الايسر
               td 8
               td 22
-              td 1.3m L.E                                                                                      
+              td 1.3m L.E
+  .row
+    .col-sm-12.my-4.dir-right.txt-right
+      .list_permier_league.table-responsive
+        table.table.table-striped
+          caption ترتيب الدوري
+          thead
+            tr
+              th(scope="col") النادي
+              th(scope="col") المباريات
+              th(scope="col") ك
+              th(scope="col") خ
+              th(scope="col") ت
+              th(scope="col") نقاط
+          tbody
+            tr
+              th(scope="row")
+                a(href="club.html")
+                  img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  span الاهلي المصري
+              td 32
+              td 10
+              td 3
+              td 1
+              td 49
+            tr
+              th(scope="row")
+                a(href="club.html")
+                  img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  span الاهلي المصري
+              td 32
+              td 10
+              td 3
+              td 1
+              td 49
+            tr
+              th(scope="row")
+                a(href="club.html")
+                  img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  span الاهلي المصري
+              td 32
+              td 10
+              td 3
+              td 1
+              td 49
+            tr
+              th(scope="row")
+                a(href="club.html")
+                  img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  span الاهلي المصري
+              td 32
+              td 10
+              td 3
+              td 1
+              td 49
+            tr
+              th(scope="row")
+                a(href="club.html")
+                  img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  span الاهلي المصري
+              td 32
+              td 10
+              td 3
+              td 1
+              td 49
+            tr
+              th(scope="row")
+                a(href="club.html")
+                  img(src="image/7.png", alt="al ahly" width="50px" height="50px")
+                  span الاهلي المصري
+              td 32
+              td 10
+              td 3
+              td 1
+              td 49
