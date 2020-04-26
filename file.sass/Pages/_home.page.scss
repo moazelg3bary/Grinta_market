@@ -390,6 +390,37 @@
                     }
                 }
             }
+            .staff {
+                border: 1px solid;
+                h4 {
+                    color: #fff;
+                    margin-bottom: 0;
+                    padding-bottom: 3px;
+                    text-align: center;
+                    background-color: $mainColor_2;
+                }
+                ul {
+                    margin: 0;
+                    list-style: none;
+                    padding: 20px 5px !important;
+                    background-color: $mainColor_1;
+                    li {
+                        color: #fff;
+                        display: inline-block;
+                        &:first-of-type {
+                            margin-left: 10px;
+                            vertical-align: top;
+                        }
+                        &> span {
+                            margin: 5px 0;
+                            display: block;
+                            span {
+                                margin-right: 6px;
+                            }
+                        }
+                    }
+                }
+            }
             .top-plyer {
                 border: 1px solid #000;
                 // use mixin sass
