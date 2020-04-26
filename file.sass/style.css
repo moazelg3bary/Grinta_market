@@ -497,6 +497,8 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 }
 .permier .container .row .list_permier, .permier .container .row .list_permier_league {
   cursor: pointer;
+}
+.permier .container .row .list_permier table, .permier .container .row .list_permier_league table {
   border: 1px solid;
 }
 .permier .container .row .list_permier table caption, .permier .container .row .list_permier_league table caption {
@@ -510,6 +512,9 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 }
 .permier .container .row .list_permier table thead, .permier .container .row .list_permier_league table thead {
   background-color: rgba(0, 0, 0, 0.05);
+}
+.permier .container .row .list_permier table tbody tr th, .permier .container .row .list_permier_league table tbody tr th {
+  font-size: small;
 }
 .permier .container .row .list_permier table tbody tr td, .permier .container .row .list_permier_league table tbody tr td {
   vertical-align: middle;
