@@ -245,6 +245,8 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 }
 .content .container .news_value .top_value {
   cursor: pointer;
+}
+.content .container .news_value .top_value table {
   border: 1px solid;
 }
 .content .container .news_value .top_value table caption {
@@ -462,7 +464,7 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 .permier .container .row .cont .info {
   display: flex;
   padding: 20px 0;
-  flex-direction: row;
+  flex-wrap: wrap;
   border-bottom: 1px solid;
   justify-content: space-between;
 }
@@ -578,6 +580,13 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 .permier .container .row .staff ul li > span {
   margin: 5px 0;
   display: block;
+  font-size: smaller;
+}
+.permier .container .row .staff ul li > span:first-of-type {
+  color: #1ba4ec;
+  font-size: large;
+  display: inline-block;
+  border-bottom: 2px solid;
 }
 .permier .container .row .staff ul li > span span {
   margin-right: 6px;

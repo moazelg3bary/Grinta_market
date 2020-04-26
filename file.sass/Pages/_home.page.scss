@@ -84,9 +84,9 @@
                 }
             }
             .top_value {
-                cursor: pointer;
-                border: 1px solid;
+                cursor: pointer;                
                 table {
+                    border: 1px solid;
                     caption {
                         color: #fff;
                         padding: 0;
@@ -297,7 +297,7 @@
                 .info {
                     display: flex;
                     padding: 20px 0;
-                    flex-direction: row;
+                    flex-wrap: wrap;
                     border-bottom: 1px solid;                    
                     justify-content: space-between;
                     ul {
@@ -414,6 +414,13 @@
                         &> span {
                             margin: 5px 0;
                             display: block;
+                            font-size: smaller;
+                            &:first-of-type {
+                                color: #1ba4ec;
+                                font-size: large;
+                                display: inline-block;                                
+                                border-bottom: 2px solid;
+                            }                            
                             span {
                                 margin-right: 6px;
                             }
