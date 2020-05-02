@@ -184,7 +184,38 @@
             margin-top: 45px;
             background-color: #fff;
             // use mixin sass
-            @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit);            
+            @include browsers(box-shadow, 0px 2px 8px -5px #000, o ms moz webkit); 
+            .box_list_video {
+                height: 464px;
+                padding: 3px;
+                direction: ltr;
+                border: 1px solid;
+                overflow-y: scroll;
+                ul {
+                    list-style: none;
+                    background-color: $mainColor_1;
+                    li {
+                        &:first-of-type {
+                            position: relative;
+                            border-bottom: 1px solid #696969;
+                        }
+                        &:last-of-type {
+                            color: #fff;
+                            padding: 2px 6px;                            
+                        }
+                        img {
+                            width: 100%;
+                            height: auto;
+                            max-width: 100%;
+                        }
+                        span {
+                            margin: 5px 0;
+                            display: block;
+                            font-size: small;
+                        }
+                    }
+                }
+            }            
         }
     }
 }
@@ -501,7 +532,38 @@
                         }
                     }
                 }
-            }                                
+            } 
+            .box_list_video {
+                height: 464px;
+                padding: 3px;
+                direction: ltr;
+                border: 1px solid;
+                overflow-y: scroll;
+                ul {
+                    list-style: none;
+                    background-color: $mainColor_1;
+                    li {
+                        &:first-of-type {
+                            position: relative;
+                            border-bottom: 1px solid #696969;
+                        }
+                        &:last-of-type {
+                            color: #fff;
+                            padding: 2px 6px;                            
+                        }
+                        img {
+                            width: 100%;
+                            height: auto;
+                            max-width: 100%;
+                        }
+                        span {
+                            margin: 5px 0;
+                            display: block;
+                            font-size: small;
+                        }
+                    }
+                }
+            }                                            
         }
     }
 }
@@ -598,15 +660,6 @@
                         &:first-of-type {
                             position: relative;
                             border-bottom: 1px solid #696969;
-                            i {
-                                top: 50%;
-                                left: 50%;
-                                color: #dcdcdc;
-                                font-size: 40px;
-                                position: absolute;
-                                @include browsers(text-shadow, 0px 0px 5px #000, o ms moz webkit);
-                                @include browsers(transform, translate(-50%, -50%), o ms moz webkit)
-                            }
                         }
                         &:last-of-type {
                             color: #fff;
