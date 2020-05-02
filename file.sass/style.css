@@ -771,6 +771,7 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 }
 .videos .container .row .box_list_video ul li:first-of-type {
   position: relative;
+  border-bottom: 1px solid #696969;
 }
 .videos .container .row .box_list_video ul li:first-of-type i {
   top: 50%;
