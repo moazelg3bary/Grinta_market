@@ -443,9 +443,10 @@
                 ul {
                     margin-bottom: 0;
                     list-style: none;
-                    width: calc(100% / 2 - 10px);
+                    vertical-align: top;
                     display: inline-block;
                     padding: 10px !important;                    
+                    width: calc(100% / 2 - 10px);
                     li {
                         color: #fff;                        
                         font-size: small;

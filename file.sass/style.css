@@ -607,9 +607,10 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 .permier .container .row .box_info_player ul, .permier .container .row .box_Statistics_player ul {
   margin-bottom: 0;
   list-style: none;
-  width: calc(100% / 2 - 10px);
+  vertical-align: top;
   display: inline-block;
   padding: 10px !important;
+  width: calc(100% / 2 - 10px);
 }
 .permier .container .row .box_info_player ul li, .permier .container .row .box_Statistics_player ul li {
   color: #fff;
