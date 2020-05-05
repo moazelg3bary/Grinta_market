@@ -42,3 +42,48 @@ body {
         @include browsers(border-radius, 50%, o ms moz webkit);
     }
 } 
+
+// default all box_video
+.box_list_video {
+    height: 464px;
+    padding: 3px;
+    direction: ltr;
+    border: 1px solid;
+    overflow-y: scroll;
+    ul {
+        cursor: pointer;
+        list-style: none;
+        position: relative;
+        // use var sass
+        background-color: $mainColor_1;
+        &::after {
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: transparent;
+        }
+        li {
+            &:first-of-type {
+                position: relative;
+                border-bottom: 1px solid #696969;
+            }
+            &:last-of-type {
+                color: #fff;
+                padding: 2px 6px;                            
+            }
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+            }
+            span {
+                margin: 5px 0;
+                display: block;
+                font-size: small;
+            }
+        }
+    }
+} 
