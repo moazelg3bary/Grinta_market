@@ -14,4 +14,9 @@ $(document).ready(function () {
   $('.box_video').on('click', function() {
     $('#main_iframe').attr('src', $(this).find('li:first-of-type .embed-responsive .child_iframe').attr('src'))
   })
+
+  // when click toggle class show
+  $('.box-text span.show').on('click', function() {
+    console.log($(this).prev().toggleClass('show'))
+  })
 })
