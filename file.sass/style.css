@@ -1019,5 +1019,10 @@ footer .pre-footer .copy_right a {
     font-size: small !important;
   }
 }
+@media (max-width: 576px) {
+  .box_list_video {
+    width: 200px !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
