@@ -341,10 +341,12 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   background-color: #2f2f75;
 }
 .content .container .match .list_match {
+  height: 410px;
   color: #fff;
   padding: 12px 0;
   cursor: pointer;
   overflow-x: auto;
+  overflow-y: scroll;
   background-color: #191b48;
 }
 .content .container .match .list_match ul {

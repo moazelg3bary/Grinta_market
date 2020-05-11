@@ -31,10 +31,18 @@ $(document).ready(function () {
   });  // a world full of color!
 
   $(".top_value").niceScroll({
-    cursorcolor: "#191b48",
     cursorwidth: "2px",
-    background: "transparent",
     cursorborder: "none",
-    cursorborderradius: 0
+    cursorborderradius: 0,
+    cursorcolor: "#191b48",
+    background: "transparent",
   });  // a world full of color!  
+
+  $(".list_match").niceScroll({
+    cursorwidth: "2px",
+    cursorborder: "none",
+    cursorborderradius: 0,
+    cursorcolor: "#c1198a",
+    background: "transparent",
+  });  // a world full of color!   
 })

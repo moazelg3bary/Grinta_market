@@ -141,12 +141,14 @@
                 margin-bottom: 0;
                 text-align: center;
                 background-color: $mainColor_2;
-            }     
+            }
             .list_match {
+                height: 410px;
                 color: #fff;
                 padding: 12px 0;
                 cursor: pointer;
                 overflow-x: auto;
+                overflow-y: scroll;
                 background-color: $mainColor_1;
                 ul {
                     list-style: none;
