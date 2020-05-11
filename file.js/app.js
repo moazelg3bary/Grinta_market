@@ -19,4 +19,13 @@ $(document).ready(function () {
   $('.box-text span.show').on('click', function() {
     console.log($(this).prev().toggleClass('show'))
   })
+
+
+  $("body").niceScroll({
+    cursorcolor: "#191b48",
+    cursorwidth: "10px",
+    background: "rgba(0, 0, 0, 0.3)",
+    cursorborder: "none",
+    cursorborderradius: 0
+  });  // a world full of color!
 })
