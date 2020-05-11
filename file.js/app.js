@@ -28,5 +28,13 @@ $(document).ready(function () {
     background: "rgba(0, 0, 0, 0.3)",
     cursorborder: "none",
     cursorborderradius: 0
-  });  // a world full of color! 
+  });  // a world full of color!
+
+  $(".top_value").niceScroll({
+    cursorcolor: "#191b48",
+    cursorwidth: "2px",
+    background: "transparent",
+    cursorborder: "none",
+    cursorborderradius: 0
+  });  // a world full of color!  
 })

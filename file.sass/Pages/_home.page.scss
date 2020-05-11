@@ -84,9 +84,11 @@
                 }
             }
             .top_value {
-                cursor: pointer;                
-                table {
-                    border: 1px solid;
+                height: 500px;
+                cursor: pointer;
+                overflow-y: scroll;
+                border: 1px solid;
+                table {                    
                     caption {
                         color: #fff;
                         padding: 0;
@@ -101,6 +103,9 @@
                         background-color: rgba(0, 0, 0, 0.05);
                     }
                     tbody tr {
+                        &:last-of-type {
+                            border-bottom: 1px solid #dee2e6;
+                        }
                         th:first-of-type span {
                             display: block;
                             &:first-of-type {

@@ -285,9 +285,9 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   font-size: 100px;
 }
 .content .container .news_value .top_value {
+  height: 500px;
   cursor: pointer;
-}
-.content .container .news_value .top_value table {
+  overflow-y: scroll;
   border: 1px solid;
 }
 .content .container .news_value .top_value table caption {
@@ -301,6 +301,9 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
 }
 .content .container .news_value .top_value table thead {
   background-color: rgba(0, 0, 0, 0.05);
+}
+.content .container .news_value .top_value table tbody tr:last-of-type {
+  border-bottom: 1px solid #dee2e6;
 }
 .content .container .news_value .top_value table tbody tr th:first-of-type span {
   display: block;
