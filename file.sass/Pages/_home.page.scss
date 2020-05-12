@@ -348,9 +348,11 @@
                 }
             }
             .list_permier, .list_permier_league, .list_player {
+                height: 542px;
                 cursor: pointer;
+                border: 1px solid;
+                overflow-y: scroll;
                 table {
-                    border: 1px solid;
                     caption {
                         color: #fff;
                         padding: 0;

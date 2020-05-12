@@ -553,10 +553,10 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   font-size: x-large;
 }
 .permier .container .row .list_permier, .permier .container .row .list_permier_league, .permier .container .row .list_player {
+  height: 542px;
   cursor: pointer;
-}
-.permier .container .row .list_permier table, .permier .container .row .list_permier_league table, .permier .container .row .list_player table {
   border: 1px solid;
+  overflow-y: scroll;
 }
 .permier .container .row .list_permier table caption, .permier .container .row .list_permier_league table caption, .permier .container .row .list_player table caption {
   color: #fff;
