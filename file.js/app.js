@@ -30,7 +30,7 @@ $(document).ready(function () {
     cursorborderradius: 0
   });  // a world full of color!
 
-  $(".top_value").niceScroll({
+  $(".top_value, .box_list_video").niceScroll({
     cursorwidth: "2px",
     cursorborder: "none",
     cursorborderradius: 0,
