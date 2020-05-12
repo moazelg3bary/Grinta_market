@@ -362,6 +362,9 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   display: inline-block;
   vertical-align: middle;
 }
+.content .container .match .list_match ul li span {
+  display: block;
+}
 .content .container .match .list_match ul li span:last-of-type {
   padding: 5px;
   display: block;
@@ -377,7 +380,7 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   margin: 0 15px;
   text-transform: uppercase;
 }
-.content .container .match .list_match ul li:nth-of-type(2) span:last-of-type {
+.content .container .match .list_match ul li:nth-of-type(2) span:nth-of-type(2) {
   color: #fff;
   padding: 2px 20px;
   display: inline-block;
@@ -774,6 +777,9 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   display: inline-block;
   vertical-align: middle;
 }
+.matches .container .row .match .list_match ul li span {
+  display: block;
+}
 .matches .container .row .match .list_match ul li span:last-of-type {
   padding: 5px;
   display: block;
@@ -789,7 +795,7 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   margin: 0 15px;
   text-transform: uppercase;
 }
-.matches .container .row .match .list_match ul li:nth-of-type(2) span:last-of-type {
+.matches .container .row .match .list_match ul li:nth-of-type(2) span:nth-of-type(2) {
   color: #fff;
   padding: 2px 20px;
   display: inline-block;

@@ -161,6 +161,9 @@
                     li {
                         display: inline-block;
                         vertical-align: middle;
+                        span {
+                            display: block;
+                        }
                         span:last-of-type {
                             padding: 5px;
                             display: block;
@@ -175,7 +178,7 @@
                                 margin: 0 15px;
                                 text-transform: $text-upper;
                             }
-                            &:last-of-type {
+                            &:nth-of-type(2) {
                                 color: #fff;
                                 padding: 2px 20px;
                                 display: inline-block;
@@ -564,10 +567,13 @@
                         li {
                             display: inline-block;
                             vertical-align: middle;
+                            span {
+                                display: block;
+                            }
                             span:last-of-type {
                                 padding: 5px;
                                 display: block;
-                            }
+                            }                        
                             span:first-of-type {
                                 display: block;
                                 padding: 5px;
@@ -578,7 +584,7 @@
                                     margin: 0 15px;
                                     text-transform: $text-upper;
                                 }
-                                &:last-of-type {
+                                &:nth-of-type(2) {
                                     color: #fff;
                                     padding: 2px 20px;
                                     display: inline-block;
