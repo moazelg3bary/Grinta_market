@@ -30,7 +30,7 @@ $(document).ready(function () {
     cursorborderradius: 0
   });  // a world full of color!
 
-  $(".top_value, .box_list_video, .list_permier, .list_permier_league, .list_player").niceScroll({
+  $(".top_value, .box_list_video, .list_permier, .list_permier_league, .list_player, .box_staff").niceScroll({
     cursorwidth: "2px",
     cursorborder: "none",
     cursorborderradius: 0,

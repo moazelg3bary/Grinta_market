@@ -608,42 +608,47 @@ header .navbar .container ul li.dropdown div.dropdown-menu a:hover {
   color: #5d5b5b;
   font-size: smaller;
 }
-.permier .container .row .staff {
+.permier .container .row .box_staff {
+  height: 542px;
+  border: 1px solid;
+  overflow-y: scroll;
+}
+.permier .container .row .box_staff .staff {
   border: 1px solid;
 }
-.permier .container .row .staff h4 {
+.permier .container .row .box_staff .staff h4 {
   color: #fff;
   margin-bottom: 0;
   padding-bottom: 3px;
   text-align: center;
   background-color: #2f2f75;
 }
-.permier .container .row .staff ul {
+.permier .container .row .box_staff .staff ul {
   margin: 0;
   list-style: none;
   padding: 20px 5px !important;
   background-color: #191b48;
 }
-.permier .container .row .staff ul li {
+.permier .container .row .box_staff .staff ul li {
   color: #fff;
   display: inline-block;
 }
-.permier .container .row .staff ul li:first-of-type {
+.permier .container .row .box_staff .staff ul li:first-of-type {
   margin-left: 10px;
   vertical-align: top;
 }
-.permier .container .row .staff ul li > span {
+.permier .container .row .box_staff .staff ul li > span {
   margin: 5px 0;
   display: block;
   font-size: smaller;
 }
-.permier .container .row .staff ul li > span:first-of-type {
+.permier .container .row .box_staff .staff ul li > span:first-of-type {
   color: #1ba4ec;
   font-size: large;
   display: inline-block;
   border-bottom: 2px solid;
 }
-.permier .container .row .staff ul li > span span {
+.permier .container .row .box_staff .staff ul li > span span {
   margin-right: 6px;
 }
 .permier .container .row .box_info_player, .permier .container .row .box_Statistics_player {

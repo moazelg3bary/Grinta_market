@@ -408,39 +408,44 @@
                     }
                 }
             }
-            .staff {
+            .box_staff {
+                height: 542px;
                 border: 1px solid;
-                h4 {
-                    color: #fff;
-                    margin-bottom: 0;
-                    padding-bottom: 3px;
-                    text-align: center;
-                    background-color: $mainColor_2;
-                }
-                ul {
-                    margin: 0;
-                    list-style: none;
-                    padding: 20px 5px !important;
-                    background-color: $mainColor_1;
-                    li {
+                overflow-y: scroll;
+                .staff {
+                    border: 1px solid;
+                    h4 {
                         color: #fff;
-                        display: inline-block;
-                        &:first-of-type {
-                            margin-left: 10px;
-                            vertical-align: top;
-                        }
-                        &> span {
-                            margin: 5px 0;
-                            display: block;
-                            font-size: smaller;
+                        margin-bottom: 0;
+                        padding-bottom: 3px;
+                        text-align: center;
+                        background-color: $mainColor_2;
+                    }
+                    ul {
+                        margin: 0;
+                        list-style: none;
+                        padding: 20px 5px !important;
+                        background-color: $mainColor_1;
+                        li {
+                            color: #fff;
+                            display: inline-block;
                             &:first-of-type {
-                                color: #1ba4ec;
-                                font-size: large;
-                                display: inline-block;                                
-                                border-bottom: 2px solid;
-                            }                            
-                            span {
-                                margin-right: 6px;
+                                margin-left: 10px;
+                                vertical-align: top;
+                            }
+                            &> span {
+                                margin: 5px 0;
+                                display: block;
+                                font-size: smaller;
+                                &:first-of-type {
+                                    color: #1ba4ec;
+                                    font-size: large;
+                                    display: inline-block;                                
+                                    border-bottom: 2px solid;
+                                }                            
+                                span {
+                                    margin-right: 6px;
+                                }
                             }
                         }
                     }
